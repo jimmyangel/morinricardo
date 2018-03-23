@@ -1,0 +1,3 @@
+[submodule "themes/hugo-later"]
+	path = themes/hugo-later
+	url = https://github.com/jimmyangel/hugo-later.git

@@ -2,7 +2,7 @@ baseurl = "http://example.org/"
 languageCode = "en-us"
 title = "Ricardo's Blog"
 # theme
-theme = "hugo-now"
+theme = "hugo-later"
 # Comment the themesDir option if you use this theme in production
 # themesDir = "../.."
 # google analytics
