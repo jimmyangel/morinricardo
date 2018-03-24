@@ -7,6 +7,8 @@ tags: ["rikitraki"]
 ### I built [RikiTraki](https://www.rikitraki.com) to collect and share GPS tracks
 Since I started capturing GPS tracks from my hikes back in 2009, I always wanted to have a place to collect them and share them with my friends and family. I looked around and I was not able to find a non-commercial, ad-free service, with a map-centric interface that I fully loved. I also wanted to be able to show my tracks in 3D, without having to rely on external applications or plug-ins. So I decided to build my own web application but it wasn't until this year that I found the time to do this project for real. Initially, I created it as a personal site just to share my own tracks, but then I thought, hey, why not open it up and make it available to anyone out there who would like to do the same?
 
+<!--more-->
+
 ### Upload, share, and visualize GPS tracks
 RikiTraki is a web site available to store, visualize and share a GPS tracks, related photos and track descriptions. Anyone can post tracks by just registering to the site. All recorded tracks are viewable to all users, i.e, there is no need to register to view and share them. The site provides visualization of all trailheads over a map or a globe, and allows for filter, search and click to drill down to the details of each entry. The details include visualization of the GPS track presented over a selection of base maps, along with a description of the trail and associated metrics such as distance and elevation. An interactive elevation widget is available to visualize the elevation profile. The trail view displays geotagged pictures along the track and provides for a slide show capability. Users have the option to visualize the GPS track in a 3D terrain view.
 

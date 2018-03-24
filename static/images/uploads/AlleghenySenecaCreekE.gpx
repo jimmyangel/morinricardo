@@ -1,0 +1,629 @@
+<?xml version="1.0"?>
+<gpx creator="GPS Visualizer http://www.gpsvisualizer.com/" version="1.1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<wpt lat="38.7598825" lon="-79.5271691">
+  <ele>1249.2</ele>
+  <time>2007-02-19T13:56:54Z</time>
+  <name>Camping</name>
+  <desc>Trail</desc>
+  <sym>Campground</sym>
+</wpt>
+<wpt lat="38.76761" lon="-79.50842">
+  <ele>959.5</ele>
+  <time>2007-02-19T13:51:46Z</time>
+  <name>Camping 1</name>
+  <desc>Unpaved Road</desc>
+  <sym>Campground</sym>
+</wpt>
+<wpt lat="38.75655" lon="-79.51723">
+  <ele>1008.7</ele>
+  <time>2007-02-19T13:52:23Z</time>
+  <name>Camping 2</name>
+  <desc>3281 ft</desc>
+  <sym>Campground</sym>
+</wpt>
+<wpt lat="38.75574" lon="-79.51626">
+  <ele>1014.5</ele>
+  <time>2007-02-19T13:52:47Z</time>
+  <name>Camping 3</name>
+  <desc>3445 ft</desc>
+  <sym>Campground</sym>
+</wpt>
+<wpt lat="38.75288" lon="-79.51635">
+  <ele>1023.3</ele>
+  <time>2007-02-19T13:53:18Z</time>
+  <name>Camping 4 (Best!)</name>
+  <desc>Trail</desc>
+  <sym>Campground</sym>
+</wpt>
+<wpt lat="38.75119" lon="-79.51778">
+  <ele>1031.9</ele>
+  <time>2007-02-19T13:54:32Z</time>
+  <name>Camping 5</name>
+  <desc>3445 ft</desc>
+  <sym>Campground</sym>
+</wpt>
+<wpt lat="38.74779" lon="-79.52127">
+  <ele>1052.1</ele>
+  <time>2007-02-19T13:55:30Z</time>
+  <name>Camping 6</name>
+  <desc>National Park</desc>
+  <sym>Campground</sym>
+</wpt>
+<wpt lat="38.74367" lon="-79.52586">
+  <ele>1063.2</ele>
+  <time>2007-02-19T13:55:49Z</time>
+  <name>Camping 7</name>
+  <desc>3609 ft</desc>
+  <sym>Campground</sym>
+</wpt>
+<wpt lat="38.7226208" lon="-79.5426239">
+  <ele>1133.4</ele>
+  <time>2005-09-24T16:57:17Z</time>
+  <name>Intersection</name>
+  <desc>24-SEP-05 12:57</desc>
+  <sym>Triangle, Red</sym>
+</wpt>
+<wpt lat="38.75084" lon="-79.51759">
+  <ele>1030.6</ele>
+  <time>2007-02-19T13:54:59Z</time>
+  <name>Intersection 10</name>
+  <desc>3445 ft</desc>
+  <sym>Triangle, Red</sym>
+</wpt>
+<wpt lat="38.73839" lon="-79.52891">
+  <ele>1079.8</ele>
+  <time>2007-02-19T13:56:22Z</time>
+  <name>Intersection 11</name>
+  <desc>25-SEP-05 09:47</desc>
+  <sym>Triangle, Red</sym>
+</wpt>
+<wpt lat="38.7348747" lon="-79.5485355">
+  <ele>1224.5</ele>
+  <time>2007-02-19T13:46:34Z</time>
+  <name>Intersection 2</name>
+  <desc>Road</desc>
+  <sym>Triangle, Red</sym>
+</wpt>
+<wpt lat="38.7363338" lon="-79.5461655">
+  <ele>1222.0</ele>
+  <time>2007-02-19T13:47:12Z</time>
+  <name>Intersection 3</name>
+  <desc>Road</desc>
+  <sym>Triangle, Red</sym>
+</wpt>
+<wpt lat="38.7468375" lon="-79.5389011">
+  <ele>1204.1</ele>
+  <time>2005-09-24T18:07:04Z</time>
+  <name>Intersection 4</name>
+  <desc>24-SEP-05 14:07</desc>
+  <sym>Triangle, Red</sym>
+</wpt>
+<wpt lat="38.7603181" lon="-79.5264869">
+  <ele>1242.8</ele>
+  <time>2005-09-24T18:55:08Z</time>
+  <name>Intersection 5</name>
+  <desc>24-SEP-05 14:55</desc>
+  <sym>Triangle, Red</sym>
+</wpt>
+<wpt lat="38.7795726" lon="-79.5145131">
+  <ele>1257.9</ele>
+  <time>2005-09-24T19:32:03Z</time>
+  <name>Intersection 6</name>
+  <desc>24-SEP-05 15:32</desc>
+  <sym>Triangle, Red</sym>
+</wpt>
+<wpt lat="38.7807726" lon="-79.5123362">
+  <ele>1218.0</ele>
+  <time>2005-09-24T19:37:32Z</time>
+  <name>Intersection 7</name>
+  <desc>24-SEP-05 15:37</desc>
+  <sym>Triangle, Red</sym>
+</wpt>
+<wpt lat="38.7688263" lon="-79.5082969">
+  <ele>950.3</ele>
+  <time>2007-02-19T13:49:06Z</time>
+  <name>Intersection 8</name>
+  <desc>3117 ft</desc>
+  <sym>Triangle, Red</sym>
+</wpt>
+<wpt lat="38.75192" lon="-79.51859">
+  <ele>1036.6</ele>
+  <time>2007-02-19T13:54:06Z</time>
+  <name>Intersection 9</name>
+  <desc>3445 ft</desc>
+  <sym>Triangle, Red</sym>
+</wpt>
+<wpt lat="38.7117863" lon="-79.549942">
+  <ele>1184.6</ele>
+  <time>2007-02-19T13:57:30Z</time>
+  <name>Parking</name>
+  <desc>Public Rd 112</desc>
+  <sym>Parking Area</sym>
+</wpt>
+<wpt lat="38.76787" lon="-79.50823">
+  <ele>960.0</ele>
+  <time>2007-02-19T13:51:04Z</time>
+  <name>Seneca Falls</name>
+  <desc>Stream</desc>
+  <sym>Scenic Area</sym>
+</wpt>
+<wpt lat="38.7117863" lon="-79.549942">
+  <ele>1184.6</ele>
+  <time>2005-09-25T20:39:44Z</time>
+  <name>PublicRd112</name>
+  <desc>Public Rd 112</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7244163" lon="-79.5460929">
+  <ele>1140.7</ele>
+  <time>2005-09-25T20:39:58Z</time>
+  <name>3773ft1</name>
+  <desc>3773 ft</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7289524" lon="-79.546423">
+  <ele>1185.3</ele>
+  <time>2005-09-25T20:39:59Z</time>
+  <name>Trail</name>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7313077" lon="-79.5454185">
+  <ele>1186.9</ele>
+  <time>2005-09-25T20:39:59Z</time>
+  <name>Trail1</name>
+  <desc>Trail</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7348747" lon="-79.5485541">
+  <ele>1224.5</ele>
+  <time>2005-09-25T20:40:00Z</time>
+  <name>Road</name>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7373568" lon="-79.5434295">
+  <ele>1223.1</ele>
+  <time>2005-09-25T20:40:02Z</time>
+  <name>Road1</name>
+  <desc>Road</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7411543" lon="-79.5429715">
+  <ele>1237.4</ele>
+  <time>2005-09-25T20:40:02Z</time>
+  <name>Road2</name>
+  <desc>Road</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7447738" lon="-79.5422269">
+  <ele>1224.5</ele>
+  <time>2005-09-25T20:40:04Z</time>
+  <name>Road3</name>
+  <desc>Road</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7462318" lon="-79.533853">
+  <ele>1224.6</ele>
+  <time>2005-09-25T20:40:11Z</time>
+  <name>Road4</name>
+  <desc>Road</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7516551" lon="-79.5309732">
+  <ele>1247.9</ele>
+  <time>2005-09-25T20:40:12Z</time>
+  <name>Road5</name>
+  <desc>Road</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7627603" lon="-79.5265784">
+  <ele>1264.6</ele>
+  <time>2005-09-25T20:40:14Z</time>
+  <name>Road6</name>
+  <desc>Road</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7678423" lon="-79.5223811">
+  <ele>1301.8</ele>
+  <time>2005-09-25T20:40:15Z</time>
+  <name>Road7</name>
+  <desc>Road</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7763087" lon="-79.5158701">
+  <ele>1279.8</ele>
+  <time>2005-09-25T20:40:18Z</time>
+  <name>Road8</name>
+  <desc>Road</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7788494" lon="-79.5130823">
+  <ele>1193.3</ele>
+  <time>2005-09-25T20:40:21Z</time>
+  <name>3937ft</name>
+  <desc>3937 ft</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.77767" lon="-79.511404">
+  <ele>1148.8</ele>
+  <time>2005-09-25T20:40:21Z</time>
+  <name>3773ft2</name>
+  <desc>3773 ft</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7753791" lon="-79.5110531">
+  <ele>1095.3</ele>
+  <time>2005-09-25T20:40:22Z</time>
+  <name>3609ft</name>
+  <desc>3609 ft</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7740553" lon="-79.5094175">
+  <ele>1045.6</ele>
+  <time>2005-09-25T20:40:23Z</time>
+  <name>3445ft</name>
+  <desc>3445 ft</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7719474" lon="-79.5098553">
+  <ele>1019.9</ele>
+  <time>2005-09-25T20:40:24Z</time>
+  <name>3281ft</name>
+  <desc>3281 ft</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7701689" lon="-79.50812">
+  <ele>963.8</ele>
+  <time>2005-09-25T20:40:25Z</time>
+  <name>3117ft</name>
+  <desc>3117 ft</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7668273" lon="-79.5080566">
+  <ele>970.4</ele>
+  <time>2005-09-25T20:40:26Z</time>
+  <name>Stream</name>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7658375" lon="-79.5108181">
+  <ele>972.4</ele>
+  <time>2005-09-25T20:40:33Z</time>
+  <name>UnpavedRoad</name>
+  <desc>Unpaved Road</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7637265" lon="-79.5142245">
+  <ele>1005.9</ele>
+  <time>2005-09-25T20:40:35Z</time>
+  <name>3281ft1</name>
+  <desc>3281 ft</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7620109" lon="-79.513938">
+  <ele>1008.2</ele>
+  <time>2005-09-25T20:40:37Z</time>
+  <name>3281ft2</name>
+  <desc>3281 ft</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7586833" lon="-79.5163544">
+  <ele>1002.6</ele>
+  <time>2005-09-25T20:40:39Z</time>
+  <name>Stream1</name>
+  <desc>Stream</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7561731" lon="-79.5172849">
+  <ele>1018.5</ele>
+  <time>2005-09-25T20:40:40Z</time>
+  <name>Stream2</name>
+  <desc>Stream</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7545359" lon="-79.5157233">
+  <ele>1017.5</ele>
+  <time>2005-09-25T20:40:41Z</time>
+  <name>UnpavedRoad1</name>
+  <desc>Unpaved Road</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7531567" lon="-79.5163822">
+  <ele>1021.4</ele>
+  <time>2005-09-25T20:40:42Z</time>
+  <name>UnpavedRoad2</name>
+  <desc>Unpaved Road</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7516307" lon="-79.5183303">
+  <ele>1034.9</ele>
+  <time>2005-09-25T20:40:42Z</time>
+  <name>UnpavedRoad3</name>
+  <desc>Unpaved Road</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7511826" lon="-79.5172405">
+  <ele>1032.3</ele>
+  <time>2005-09-25T20:40:45Z</time>
+  <name>JudySpringsCamp</name>
+  <desc>Judy Springs Campground</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7494213" lon="-79.5183599">
+  <ele>1044.0</ele>
+  <time>2005-09-25T20:40:46Z</time>
+  <name>Road9</name>
+  <desc>Road</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7465127" lon="-79.5239082">
+  <ele>1053.4</ele>
+  <time>2005-09-25T20:40:47Z</time>
+  <name>SenecaCreek</name>
+  <desc>Seneca Creek</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7425987" lon="-79.5262704">
+  <ele>1070.0</ele>
+  <time>2005-09-25T20:40:48Z</time>
+  <name>Road10</name>
+  <desc>Road</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="38.7307551" lon="-79.5367824">
+  <ele>1109.5</ele>
+  <time>2005-09-25T20:40:53Z</time>
+  <name>Road11</name>
+  <desc>Road</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<trk>
+  <name>Allegheny/Seneca Creek</name>
+  <trkseg>
+    <trkpt lat="38.7117863" lon="-79.549942">
+      <ele>1184.581</ele>
+      <time>2005-09-25T20:39:44Z</time>
+      <cmt>Public Rd 112</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7226208" lon="-79.5426239">
+      <ele>1133.394</ele>
+      <time>2005-09-24T16:57:17Z</time>
+      <cmt>24-SEP-05 12:57</cmt>
+      <sym>Triangle, Red</sym>
+    </trkpt>
+    <trkpt lat="38.7244163" lon="-79.5460929">
+      <ele>1140.742</ele>
+      <time>2005-09-25T20:39:58Z</time>
+      <cmt>3773 ft</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7289524" lon="-79.546423">
+      <ele>1185.283</ele>
+      <time>2005-09-25T20:39:59Z</time>
+      <cmt>Trail</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7313077" lon="-79.5454185">
+      <ele>1186.854</ele>
+      <time>2005-09-25T20:39:59Z</time>
+      <cmt>Trail</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7348747" lon="-79.5485541">
+      <ele>1224.535</ele>
+      <time>2005-09-25T20:40:00Z</time>
+      <cmt>Road</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7373568" lon="-79.5434295">
+      <ele>1223.09</ele>
+      <time>2005-09-25T20:40:02Z</time>
+      <cmt>Road</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7411543" lon="-79.5429715">
+      <ele>1237.4</ele>
+      <time>2005-09-25T20:40:02Z</time>
+      <cmt>Road</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7447738" lon="-79.5422269">
+      <ele>1224.537</ele>
+      <time>2005-09-25T20:40:04Z</time>
+      <cmt>Road</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7468375" lon="-79.5389011">
+      <ele>1204.084</ele>
+      <time>2005-09-24T18:07:04Z</time>
+      <cmt>24-SEP-05 14:07</cmt>
+      <sym>Triangle, Red</sym>
+    </trkpt>
+    <trkpt lat="38.7462318" lon="-79.533853">
+      <ele>1224.621</ele>
+      <time>2005-09-25T20:40:11Z</time>
+      <cmt>Road</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7516551" lon="-79.5309732">
+      <ele>1247.937</ele>
+      <time>2005-09-25T20:40:12Z</time>
+      <cmt>Road</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7603181" lon="-79.5264869">
+      <ele>1242.82</ele>
+      <time>2005-09-24T18:55:08Z</time>
+      <cmt>24-SEP-05 14:55</cmt>
+      <sym>Triangle, Red</sym>
+    </trkpt>
+    <trkpt lat="38.7627603" lon="-79.5265784">
+      <ele>1264.581</ele>
+      <time>2005-09-25T20:40:14Z</time>
+      <cmt>Road</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7678423" lon="-79.5223811">
+      <ele>1301.787</ele>
+      <time>2005-09-25T20:40:15Z</time>
+      <cmt>Road</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7763087" lon="-79.5158701">
+      <ele>1279.777</ele>
+      <time>2005-09-25T20:40:18Z</time>
+      <cmt>Road</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7795726" lon="-79.5145131">
+      <ele>1257.933</ele>
+      <time>2005-09-24T19:32:03Z</time>
+      <cmt>24-SEP-05 15:32</cmt>
+      <sym>Triangle, Red</sym>
+    </trkpt>
+    <trkpt lat="38.7807726" lon="-79.5123362">
+      <ele>1217.968</ele>
+      <time>2005-09-24T19:37:32Z</time>
+      <cmt>24-SEP-05 15:37</cmt>
+      <sym>Triangle, Red</sym>
+    </trkpt>
+    <trkpt lat="38.7788494" lon="-79.5130823">
+      <ele>1193.263</ele>
+      <time>2005-09-25T20:40:21Z</time>
+      <cmt>3937 ft</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.77767" lon="-79.511404">
+      <ele>1148.82</ele>
+      <time>2005-09-25T20:40:21Z</time>
+      <cmt>3773 ft</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7753791" lon="-79.5110531">
+      <ele>1095.348</ele>
+      <time>2005-09-25T20:40:22Z</time>
+      <cmt>3609 ft</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7740553" lon="-79.5094175">
+      <ele>1045.553</ele>
+      <time>2005-09-25T20:40:23Z</time>
+      <cmt>3445 ft</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7719474" lon="-79.5098553">
+      <ele>1019.894</ele>
+      <time>2005-09-25T20:40:24Z</time>
+      <cmt>3281 ft</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7701689" lon="-79.50812">
+      <ele>963.776</ele>
+      <time>2005-09-25T20:40:25Z</time>
+      <cmt>3117 ft</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7668273" lon="-79.5080566">
+      <ele>970.427</ele>
+      <time>2005-09-25T20:40:26Z</time>
+      <cmt>Stream</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7658375" lon="-79.5108181">
+      <ele>972.416</ele>
+      <time>2005-09-25T20:40:33Z</time>
+      <cmt>Unpaved Road</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7637265" lon="-79.5142245">
+      <ele>1005.861</ele>
+      <time>2005-09-25T20:40:35Z</time>
+      <cmt>3281 ft</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7620109" lon="-79.513938">
+      <ele>1008.175</ele>
+      <time>2005-09-25T20:40:37Z</time>
+      <cmt>3281 ft</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7586833" lon="-79.5163544">
+      <ele>1002.639</ele>
+      <time>2005-09-25T20:40:39Z</time>
+      <cmt>Stream</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7561731" lon="-79.5172849">
+      <ele>1018.521</ele>
+      <time>2005-09-25T20:40:40Z</time>
+      <cmt>Stream</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7545359" lon="-79.5157233">
+      <ele>1017.467</ele>
+      <time>2005-09-25T20:40:41Z</time>
+      <cmt>Unpaved Road</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7531567" lon="-79.5163822">
+      <ele>1021.39</ele>
+      <time>2005-09-25T20:40:42Z</time>
+      <cmt>Unpaved Road</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7516307" lon="-79.5183303">
+      <ele>1034.868</ele>
+      <time>2005-09-25T20:40:42Z</time>
+      <cmt>Unpaved Road</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7511826" lon="-79.5172405">
+      <ele>1032.335</ele>
+      <time>2005-09-25T20:40:45Z</time>
+      <cmt>Judy Springs Campground</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7494213" lon="-79.5183599">
+      <ele>1044.008</ele>
+      <time>2005-09-25T20:40:46Z</time>
+      <cmt>Road</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7465127" lon="-79.5239082">
+      <ele>1053.408</ele>
+      <time>2005-09-25T20:40:47Z</time>
+      <cmt>Seneca Creek</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7425987" lon="-79.5262704">
+      <ele>1069.956</ele>
+      <time>2005-09-25T20:40:48Z</time>
+      <cmt>Road</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.73839" lon="-79.52891">
+      <ele>1079.787</ele>
+      <time>2007-02-19T13:56:22Z</time>
+      <cmt>25-SEP-05 09:47</cmt>
+      <sym>Triangle, Red</sym>
+    </trkpt>
+    <trkpt lat="38.7307551" lon="-79.5367824">
+      <ele>1109.512</ele>
+      <time>2005-09-25T20:40:53Z</time>
+      <cmt>Road</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+    <trkpt lat="38.7226208" lon="-79.5426239">
+      <ele>1133.394</ele>
+      <time>2005-09-24T16:57:17Z</time>
+      <cmt>24-SEP-05 12:57</cmt>
+      <sym>Triangle, Red</sym>
+    </trkpt>
+    <trkpt lat="38.7117863" lon="-79.549942">
+      <ele>1184.581</ele>
+      <time>2005-09-25T20:39:44Z</time>
+      <cmt>Public Rd 112</cmt>
+      <sym>Waypoint</sym>
+    </trkpt>
+  </trkseg>
+</trk>
+</gpx>

@@ -7,6 +7,8 @@ tags: ["rikitraki"]
 ### This is Part 2 of the "Welcome to RikiTraki" series
 In [Part 1](/post/Rikitraki-intro-1), I introduced [RikiTraki](https://www.rikitraki.com), described the main page view and began describing the menu bar: the RikiTraki label and the globe icon. In this installment of the series, I will walk you through the remainder of the menu items and associated functions.
 
+<!--more-->
+
 ### The filter function
 RikiTraki loads the latest tracks (up to 500) on the main page view. If you want to constrain the list based on some search criteria (e.g., tracks of a given user, tracks in a given region), you can use the filter function.
 
