@@ -6,7 +6,7 @@ theme = "hugo-later"
 # Comment the themesDir option if you use this theme in production
 # themesDir = "../.."
 # google analytics
-GoogleAnalytics = "UA-XXXXXX"
+GoogleAnalytics = "UA-64070309-3"
 disqusShortname = "jimmyangel"
 
 [taxonomies]
