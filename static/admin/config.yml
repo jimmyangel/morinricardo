@@ -16,10 +16,51 @@ collections:
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
-
   - name: "pages"
     label: "pages"
     files:
+      - file: config.toml
+        label: "Site Config"
+        name: config
+        fields:
+          - label: "Site Parameters"
+            name: "params"
+            widget: "object"
+            fields:
+              - {label: "Description", name: "description", widget: "string"}
+              - {label: "Author", name: "author", widget: "string"}
+              - {label: "Keywords", name: "keywords", widget: "list"}
+              - {label: "Avatar Image URL", name: "avatar", widget: "string"}
+              - {label: "Display Author", name: "displayauthor", widget: "boolean", default: false}
+              - {label: "Pygments Use Classes", name: "PygmentsUseClasses", widget: "boolean", default: true}
+              - {label: "Pygments Code Fences", name: "PygmentsCodeFences", widget: "boolean", default: true}
+              - {label: "Paginate", name: "paginate", widget: "number", default: 10, valueType: "int"}
+              - {label: "Paginate Path", name: "paginatePath", widget: "string"}
+              - {label: "Footer Links", name: "footerlinks", widget: "list", fields: [
+                  {label: "Dribbble", name: "dribbble", widget: "string"},
+                  {label: "email", name: "email", widget: "string"},
+                  {label: "Facebook", name: "facebook", widget: "string"},
+                  {label: "Flickr", name: "flickr", widget: "string"},
+                  {label: "Github", name: "github", widget: "string"},
+                  {label: "Instagram", name: "instagram", widget: "string"},
+                  {label: "LinkedIn", name: "linkedin", widget: "string"},
+                  {label: "RSS", name: "rss", widget: "string"},
+                  {label: "Twitter", name: "twitter", widget: "string"},
+                  {label: "Stackoverflow", name: "stackoverflow", widget: "string"},
+                  {label: "YouTube", name: "youtube", widget: "string"},
+                  {label: "googleplus", name: "googleplus", widget: "string"}]}
+          - {label: "Base URL", name: "baseurl", widget: "string", required: false, default: ""}
+          - {label: "Language Code", name: "languageCode", widget: "string"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Theme", name: "theme", widget: "string", default: "hildemorin"}
+          - {label: "Google Analytics Site Code", name: "GoogleAnalytics", widget: "string"}
+          - {label: "DISQUS Short Name", name: "disqusShortname", widget: "string"}
+          - label: "Taxonomies"
+            name: "taxonomies"
+            widget: "object"
+            fields:
+              - {label: "Category", name: "category", widget: "string", default: "categories"}
+              - {label: "Tag", name: "tag", widget: "string", default: "tags"}
       - file: content/about/_index.md
         label: "About"
         name: about
