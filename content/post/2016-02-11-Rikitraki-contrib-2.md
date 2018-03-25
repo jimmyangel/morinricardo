@@ -1,7 +1,7 @@
 ---
 title: Adding content to RikiTraki (Part 2)
 date: 2016-02-11
-tags: ["rikitraki"]
+tags: ["rikitraki", "gpx", "gps"]
 ---
 ### Uploading a new track
 

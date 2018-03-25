@@ -1,7 +1,7 @@
 ---
 title: Rikitraki Update
 date: 2016-12-29
-tags: ["rikitraki"]
+tags: ["rikitraki", "gpx", "gps", "3d", "cesium"]
 ---
 ### It has been a long time since my last post. Here is an update.
 

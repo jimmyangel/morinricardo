@@ -1,7 +1,7 @@
 ---
 title: New HOWL feature - ability to update content
 date: 2017-10-07
-tags: ["howl"]
+tags: ["howl", "3d", "cesium"]
 ---
 ### It is now possible to update [HOWL](https://oregonhowl.org) selected content directly from the application
 

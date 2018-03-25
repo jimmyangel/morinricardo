@@ -1,7 +1,7 @@
 ---
 title: Welcome to RikiTraki! (Part 1)
 date: 2015-12-10
-tags: ["rikitraki"]
+tags: ["rikitraki", "gpx", "gps"]
 ---
 
 ### I built [RikiTraki](https://www.rikitraki.com) to collect and share GPS tracks

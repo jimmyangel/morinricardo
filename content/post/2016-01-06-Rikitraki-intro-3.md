@@ -1,7 +1,7 @@
 ---
 title: Welcome to RikiTraki! (Part 3)
 date: 2016-01-06
-tags: ["rikitraki"]
+tags: ["rikitraki", "gpx", "gps", "3d", "cesium"]
 ---
 ### This is Part 3 of the "Welcome to RikiTraki" series
 

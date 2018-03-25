@@ -1,7 +1,7 @@
 ---
 title: RikiTraki 3D Visualization Improvements
 date: 2016-05-04
-tags: ["foss4gna"]
+tags: ["rikitraki", "3d", "cesium"]
 ---
 ### Latest [RikiTraki](https://www.rikitraki.com) 3D Visualization improvements
 

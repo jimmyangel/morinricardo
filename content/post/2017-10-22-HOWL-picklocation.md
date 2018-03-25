@@ -1,7 +1,7 @@
 ---
 title: Pick location (lat/long) when updating content
 date: 2017-10-22
-tags: ["howl"]
+tags: ["howl", "3d", "cesium"]
 ---
 ### It is now possible to pick a location when updating content
 

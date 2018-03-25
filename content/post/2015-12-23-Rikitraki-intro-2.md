@@ -1,7 +1,7 @@
 ---
 title: Welcome to RikiTraki! (Part 2)
 date: 2015-12-23
-tags: ["rikitraki"]
+tags: ["rikitraki", "gpx", "gps"]
 ---
 
 ### This is Part 2 of the "Welcome to RikiTraki" series

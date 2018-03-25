@@ -1,7 +1,7 @@
 ---
 title: Adding content to RikiTraki (Part 1)
 date: 2016-02-01
-tags: ["rikitraki"]
+tags: ["rikitraki", "gpx", "gps"]
 ---
 ### Ready to save content to RikiTraki to share with your friends?
 <i>(Updated Feb 14, 2016: invitation code no longer required)</i>

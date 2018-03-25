@@ -1,7 +1,7 @@
 ---
 title: Guest post at the Cesium Blog
 date: 2018-03-21
-tags: ["cesium", "tutorial"]
+tags: ["cesium", "tutorial", "3d", "czml"]
 ---
 ### Do you want to learn how to use time animations in CesiumJS?
 ---

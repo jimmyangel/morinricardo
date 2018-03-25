@@ -1,7 +1,7 @@
 ---
 title: Open beta, 3D track animation and a new logo
 date: 2016-03-11
-tags: ["rikitraki"]
+tags: ["rikitraki", "gpx", "gps", "3d", "cesium"]
 ---
 ### A couple of changes to [RikiTraki](https://www.rikitraki.com)...
 

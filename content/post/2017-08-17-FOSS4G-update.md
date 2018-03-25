@@ -1,7 +1,7 @@
 ---
 title: HOWL Presentation at FOSS4G 2017
 date: 2017-08-17
-tags: ["foss4g"]
+tags: ["foss4g", "howl"]
 ---
 ### [HOWL](https://oregonhowl.org) at [FOSS4G 2017, Boston](http://2017.foss4g.org/) presentation slides
 
