@@ -1,9 +1,11 @@
 ---
 title: RikiTraki Presentation at FOSS4G NA
-date: 2016-05-07
-tags: ["foss4gna", "rikitraki"]
+tags:
+  - foss4gna
+  - rikitraki
+date: 2016-05-07T00:00:00.000Z
 ---
-### The final presentation materials of [RikiTraki](https://www.rikitraki.com) at [FOSS4G NA](https://2016.foss4g-na.org/session/visualizing-gps-tracks-rikitraki) are available here
+### The final presentation materials of [RikiTraki](https://www.rikitraki.com) at [FOSS4G NA](https://2016.foss4g-na.org/session/visualizing-gps-tracks-rikitraki.html) are available here
 
 ---
 Before I report of my FOSS4G NA experiences including a quick summary of my favorite talks, here I am posting my final presentation slides:
