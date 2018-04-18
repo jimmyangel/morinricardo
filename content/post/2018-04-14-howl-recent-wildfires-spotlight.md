@@ -1,7 +1,10 @@
 ---
-title: "New HOWL Spotlight: Recent Wildfire Perimeters"
-date: 2018-04-14
-tags: ["cesium", "howl", "3d"]
+title: 'New HOWL Spotlight: Recent Wildfire Perimeters'
+tags:
+  - cesium
+  - howl
+  - 3d
+date: 2018-04-14T00:00:00.000Z
 ---
 ### 3D time-based animation of recent (and current) wildfires in Oregon
 ---
@@ -14,8 +17,6 @@ I am pleased to announce that today I released a new [HOWL](https://oregonhowl.o
 The data for this 'spotlight' comes from the Geospatial Multi-Agency Coordination or [GeoMAC](https://www.geomac.gov/). [GeoMAC](https://www.geomac.gov/) is a federal multi-agency program that disseminates information about wildfires in the United States. The program collects fire location and perimeter data from a variety of sources such as field reports, GPS data, and infrared imagery taken from airplanes and satellites.
 
 For each incident recorded, [GeoMAC](https://www.geomac.gov/) keeps a collection of fire perimeter data (i.e., reports) as they are collected over time. The data is updated regularly and for current/active incidents it is available almost in real-time. For example, the [2017 Eagle Creek fire](https://inciweb.nwcg.gov/incident/5584/) has 20 reports filed between September 3rd (just one day after the fire started), through October 3rd, and each report was available almost immediately after submitted.
-
-_A note of caution: Due to the tactical nature of the [GeoMAC](https://www.geomac.gov/) data, there might be inconsistencies and substantial variations across reports. Locations and perimeters are approximate, and the [GeoMAC](https://www.geomac.gov/) team makes it quite clear in their site that the data is provided for informational purposes only and do not necessarily represent the 'official' incident locations and perimeters._
 
 ### Accessing the Recent Wildfire Perimeters 'Spotlight'
 
@@ -65,3 +66,7 @@ As with every other [HOWL](https://oregonhowl.org/) 'spotlight,' clicking on the
 Wildfires are pretty regular events here in the Pacific Northwest. This new [HOWL](https://oregonhowl.org/) 'spotlight' will give you the opportunity to keep an eye on large wildfire incidents as they occur. There are many sites that can be used to access this type of information, but as far as I can tell, this is the only one that offers a 3D view of the affected areas.
 
 As always, please contact me if you have any feedback or if you see any mistakes that need fixing.
+
+---
+
+_A note of caution: Due to the tactical nature of the [GeoMAC](https://www.geomac.gov/) data, there might be inconsistencies and substantial variations across reports. Locations and perimeters are approximate, and the [GeoMAC](https://www.geomac.gov/) team makes it quite clear in their site that the data is provided for informational purposes only and do not necessarily represent the 'official' incident locations and perimeters._
