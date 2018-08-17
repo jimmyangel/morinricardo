@@ -17,7 +17,7 @@ We are starting the project with the visualization of timber harvest activities 
 
 To view the latest version of the visualization, head over to [https://timber-harvest.oregonhowl.org](https://timber-harvest.oregonhowl.org/). In the near future, it will also be embedded in the [HOWL](https://oregonhowl.org/) site as a new 'spotlight'. Stay tuned!
 
-As of August 16, 2016, we are showing timber harvest activities in National Forests where data is available, i.e., all forests except for Mount Hood and Siuslaw.
+As of this blog post's date, we are showing timber harvest activities in National Forests where data is available, i.e., all forests except for Mount Hood and Siuslaw.
 
 <p align="center">
 	<img src="/images/uploads/timber-harvest.png"/>
