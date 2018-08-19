@@ -1,23 +1,25 @@
 ---
-title: 'New HOWL Project: Timber Harvest Visualization'
+title: 'New HOWL Project: Logging Visualization'
 tags:
   - leaflet
   - howl
 date: 2018-08-16T00:00:00.000Z
 ---
-### Visualization and time-based animation of timber harvest activities in Oregon
----
+### Visualization and time-based animation of logging activities in Oregon
+
+- - -
+
 The latest HOWL project is about raising awareness of logging activities in Oregon.
 
-We are starting the project with the visualization of timber harvest activities in National Forests. Later on, we will add logging activities in Bureau of Land Management (BLM) lands. And finally, we will attempt to include logging activities in private lands as well.
+We are starting the project with the visualization of logging activities in National Forests. Later on, we will add logging activities in Bureau of Land Management (BLM) lands. And finally, we will attempt to include logging activities in private lands as well.
 
 <!--more-->
 
 ### Accessing the visualization
 
-To view the latest version of the visualization, head over to [https://timber-harvest.oregonhowl.org](https://timber-harvest.oregonhowl.org/). In the near future, it will also be embedded in the [HOWL](https://oregonhowl.org/) site as a new 'spotlight'. Stay tuned!
+To view the latest version of the visualization, head over to [https://logging.oregonhowl.org](https://logging.oregonhowl.org/). The site is alsombedded in the [HOWL](https://oregonhowl.org/) site as a new 'spotlight'. 
 
-As of this blog post's date, we are showing timber harvest activities in National Forests where data is available, i.e., all forests except for Mount Hood and Siuslaw.
+As of this blog post's date, we are showing logging activities in National Forests where data is available, i.e., all forests except for Mount Hood and Siuslaw.
 
 <p align="center">
 	<img src="/images/uploads/timber-harvest.png"/>
@@ -39,7 +41,7 @@ Use the controls located on the top-right part of the screen to adjust the time 
 
 ### Getting more details
 
-Zoom into an area of interest and you can see the harvested areas in more detail. If you click on one of the shapes, the shape will be highlighted and the control box will display some details about the specific activities that occurred in that area.
+Zoom into an area of interest and you can see the logged areas in more detail. If you click on one of the shapes, the shape will be highlighted and the control box will display some details about the specific activities that occurred in that area.
 
 <p align="center">
 	<img src="/images/uploads/timber-harvest-willamette-control-pick.png"/>
@@ -70,20 +72,20 @@ Pick one or more overlay layers
 
 ### Embedding in a web site
 
-The timber harvest application can be easily embedded in any web site by using the html `iframe` tag. Simply insert an `iframe` tag in your post or page with a link to site, like shown in the example below.
+The logging application can be easily embedded in any web site by using the html `iframe` tag. Simply insert an `iframe` tag in your post or page with a link to site, like shown in the example below.
 
 Notice how it is not merely an image, but the active timber harvests site which you can fully interact with.
 
-<iframe width="100%" height="600" src="https://timber-harvest.oregonhowl.org/" frameborder="0"></iframe>
+<iframe width="100%" height="600" src="https://logging.oregonhowl.org/" frameborder="0"></iframe>
 
 The code used to display the track above is here:
 
-`<iframe width="100%" height="600" src="https://timber-harvest.oregonhowl.org/" frameborder="0"></iframe>`
+`<iframe width="100%" height="600" src="https://logging.oregonhowl.org/" frameborder="0"></iframe>`
 
----
+- - -
 
 Please contact me if you have any feedback or if you see any errors that need to be corrected.
 
----
+- - -
 
-_A note about data quality: timber harvest spatial data are separately and independently reported by each National Forest office. Availability over date ranges varies considerably across offices and there can be significant omissions of timber harvest activity, especially regarding older records.._
+_A note about data quality: logging spatial data are separately and independently reported by each National Forest office. Availability over date ranges varies considerably across offices and there can be significant omissions of logging activity, especially regarding older records.._
