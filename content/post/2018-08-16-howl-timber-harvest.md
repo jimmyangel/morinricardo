@@ -88,4 +88,4 @@ Please contact me if you have any feedback or if you see any errors that need to
 
 - - -
 
-_A note about data quality: logging spatial data are separately and independently reported by each National Forest office. Availability over date ranges varies considerably across offices and there can be significant omissions of logging activity, especially regarding older records.._
+_A note about data quality: logging spatial data are separately and independently reported by each National Forest office. Availability over date ranges varies considerably across offices and there can be significant omissions of logging activity, especially regarding older records._
