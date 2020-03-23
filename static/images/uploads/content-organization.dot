@@ -1,0 +1,39 @@
+digraph example {
+  rankdir=LR
+  c1 [shape=tab]
+  c2 [shape=tab]
+  "..." [shape=tab]
+  content->cases
+  cases->c1
+  cases->c2
+  cases->"..."
+  explore [shape=tab]
+  home [shape=tab]
+  content->explore
+  content->home
+  content->methods->class
+  class [shape=tab]
+  evaluation [shape=tab]
+  priorities [shape=tab]
+  redbooks [shape=tab]
+  methods->evaluation
+  methods->priorities
+  methods->redbooks
+  content->references
+  a [shape=tab]
+  b [shape=tab]
+  " ... " [shape=tab]
+  content->units->a
+  units->b
+  units->" ... "
+  "arbustales-espinosos" [shape=tab]
+  "arbustales-riberenos" [shape=tab]
+  " ..." [shape=tab]
+  content->vcards->"arbustales-espinosos"
+  vcards->"arbustales-riberenos"
+  vcards->" ..."
+  carto [shape=tab]
+  formations [shape=tab]
+  content->vegetation->carto
+  vegetation->formations
+}

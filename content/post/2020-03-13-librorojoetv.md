@@ -22,7 +22,7 @@ Today, after a few months of teamwork, I am excited to [share the results](https
 
 <style>
   .is-embedded {
-    border: 2px solid lightgray;
+    /*border: 2px solid lightgray;*/
     width: 100%;
   }
   @media only screen and (min-width: 1024px) {
@@ -39,11 +39,17 @@ I ended up using exactly the tools and frameworks that I described in my [previo
 
 ### Site organization
 
+We organized the site to make it easy to browse, by grouping related content under three menu groups in the navigation bar: vegetation, methods, and risk of collapse, as shown on the diagram below. The circled numbers map to the chapter numbers that contain the source content.
+
 <p align="center" class="is-embedded">
 	<img src="/images/uploads/librorojoetv-sitemap.svg"/>
 </p>
 
+### Content organization
 
+<p align="center" class="is-embedded">
+	<img src="/images/uploads/content-organization.svg"/>
+</p>
 -----
 
-That's it for now. Until next post!
+That's it for now. Stay healthy!
