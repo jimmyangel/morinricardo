@@ -27,7 +27,7 @@ I would like to thank the Provita team for giving me this opportunity. I would a
 
 ### Tools and frameworks
 
-I ended up using exactly the tools and frameworks that I described in my [previous post](/post/2019-09-16-new-project-new-tools/), with the small addition of a few helper libraries and Vue components (listed at the [bottom of the post](post/2020-03-13-librorojoetv#third-party-components)).
+I ended up using exactly the tools and frameworks that I described in my [previous post](/post/2019-09-16-new-project-new-tools/), with the small addition of a few helper libraries and Vue components (listed at the [bottom of the post](post/2020-03-23-librorojoetv#third-party-components)).
 
 |Tool|Purpose|
 |-----------|-----------|
