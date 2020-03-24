@@ -1,4 +1,4 @@
-digraph example {
+digraph content {
   rankdir=LR
   c1 [shape=tab]
   c2 [shape=tab]
@@ -16,6 +16,7 @@ digraph example {
   evaluation [shape=tab]
   priorities [shape=tab]
   redbooks [shape=tab]
+  {rank = same; explore; class; home}
   methods->evaluation
   methods->priorities
   methods->redbooks

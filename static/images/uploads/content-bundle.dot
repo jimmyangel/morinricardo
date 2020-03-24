@@ -1,0 +1,5 @@
+digraph g {
+  "content bundle" [shape=tab]
+  "content bundle" -> "markdown file(s)\n(.md)"
+  "content bundle" -> "image file(s)\n (.jpg, .png, .svg)"
+}
