@@ -171,10 +171,10 @@ In addition to the base frameworks and tools, I incorporated a number of 3rd par
 |-----------|-----------|
 |[Axios](https://github.com/axios/axios)|HTTP client used to access remote data (e.g., map geojson files)|
 |[Clipboard](https://github.com/zenorocha/clipboard.js)|Used to copy content to the clipboard (e.g., citations)|
-|[v-runtime-template](https://github.com/alexjoverm/v-runtime-template)|Adds the ability to use Vue components in a template generated at run time|
-|[vue-backtotop](https://github.com/caiofsouza/vue-backtotop)|Sticky button used to scroll to the top of the page|
-|[vue-compare-image](https://github.com/junkboy0315/vue-compare-image)|Used to compare two images using a slider; note: I contributed a Pull Request to this component to add image labels|
-|[vue-social-sharing](https://github.com/nicolasbeauvais/vue-social-sharing)|Used to share links on Twitter and Facebook|
+|[v&#8209;runtime&#8209;template](https://github.com/alexjoverm/v-runtime-template)|Adds the ability to use Vue components in a template generated at run time|
+|[vue&#8209;backtotop](https://github.com/caiofsouza/vue-backtotop)|Sticky button used to scroll to the top of the page|
+|[vue&#8209;compare&#8209;image](https://github.com/junkboy0315/vue-compare-image)|Used to compare two images using a slider; note: I contributed a Pull Request to this component to add image labels|
+|[vue&#8209;social&#8209;sharing](https://github.com/nicolasbeauvais/vue-social-sharing)|Used to share links on Twitter and Facebook|
 
 ---
 
