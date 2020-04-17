@@ -23,7 +23,7 @@ Today, after a few months of teamwork, I am excited to share the results:
 
 The project sources can be found [here](https://github.com/jimmyangel/librorojoetv).
 
-I would like to thank the Provita team for giving me this opportunity. I would also like to thank [Marlene Alvarado](http://marlenealvarado.com/) for contributing the graphic design of the site.
+I would like to thank the Provita team for giving me this opportunity. I would also like to thank [Marlene Alvarado](https://marlenealvarado.com/) for contributing the graphic design of the site.
 
 ### Tools and frameworks
 
