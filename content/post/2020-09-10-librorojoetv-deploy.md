@@ -1,12 +1,9 @@
 ---
 title: "Venezuelan Red List of Ecosystems Netlify Deployment"
 tags:
-  - leaflet
+  - netlify
   - vue
   - gridsome
-  - bulma
-  - buefy
-  - netlify
   - provita
 date: 2020-09-10T00:00:00.000Z
 ---
