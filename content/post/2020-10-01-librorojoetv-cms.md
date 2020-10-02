@@ -30,7 +30,7 @@ Can it be done for free?
 
 Enter [Netlify CMS](https://www.netlifycms.org/), brought to you by the [Netlify](https://www.netlify.com/) team!
 
-Netlify CMS is a free and open source content management system that provides configurable data entry/editing of markdown files hosted on Git based services such as Github, Gitlab or Bitbucket. In our case, we use [Github](https://github.com/jimmyangel/librorojoetv).
+Netlify CMS is a **free and open source** content management system that provides configurable data entry/editing of markdown files hosted on Git based back-end services such as Github, Gitlab or Bitbucket. In our case, we use [Github](https://github.com/jimmyangel/librorojoetv).
 
 Even though it is not strictly required to use Netlify with the Netlify CMS, it works really well with it, mainly because it already has the hooks needed to integrate with their identity system. This is super important becase an identity system is essential to ensure that only  authorized users can edit the site's content. The free tier of Netlify allows up to five admin users that could be granted access to edit the content. For a small site like this, five admin users is more than enough.
 
@@ -78,11 +78,15 @@ Starting with the actual site, the menu option used to show ```methods``` (Méto
 
 #### Page: metodos/librosrojos, and open menu ####
 
+This shows how the page looks on the site.
+
 <p align="center">
   <img src="/images/uploads/librorojo-cms-1.png"/>
 </p>
 
 #### Associated CMS editing page
+
+This shows how the same content above is viewed in the CMS.
 
 <p align="center">
   <img src="/images/uploads/librorojo-cms-2.png"/>
@@ -90,6 +94,8 @@ Starting with the actual site, the menu option used to show ```methods``` (Méto
 
 
 #### Associated markdown (edited by using the UI above)
+
+This shows how the same content above stored in the repository.
 
 ```
 ---
@@ -113,7 +119,9 @@ Las listas rojas de especies amenazadas de extinción han sido fundamentales  ..
 
 ```
 
-#### Associated Netlify CMS collection configuration (which defines the UI and the structure of the markdown above)
+#### Associated Netlify CMS collection configuration
+
+This shows how the CMS is configured to define the UI and the structure of the markdown above.
 
 ```
 - name: "methods"
@@ -148,9 +156,9 @@ After markdown files are saved and published, the pushed repository changes will
 
 For this site, there are a total of eight collections defined. Some of them, like the collection of ```/fichas``` (```vcards```), are a little bit involved. That is because they include a ton of structured content defined in the front matter section of the markdown.
 
-And that is basically it!
+And that's basically it!
 
-Between this post and my previous three, I believe I have described the design and implementation of the Venezuelan Red List of Ecosystems site [(Libro Rojo de los Ecosistemas Terrestres de Venezuela)](https://ecosistemasamenazados.org/) site in a fair amount of detail. The code and the content are, of course, publicly available at the [Github repo](https://github.com/jimmyangel/librorojoetv).
+Between this post and my previous three, I believe I have described the design and implementation of the Venezuelan Red List of Ecosystems site [(Libro Rojo de los Ecosistemas Terrestres de Venezuela)](https://ecosistemasamenazados.org/) site in a fair amount of detail. For the gory details, the code and the content are publicly available at the [Github repo](https://github.com/jimmyangel/librorojoetv).
 
 ---
 
