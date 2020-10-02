@@ -1,6 +1,7 @@
 ---
 title: "Venezuelan Red List of Ecosystems content management"
 tags:
+  - netlifycms
   - netlify
   - vue
   - gridsome
