@@ -98,7 +98,7 @@ This shows how the same content above is viewed in the CMS.
 
 This shows how the same content above stored in the repository.
 
-```
+```yml
 ---
 id: librosrojos
 method: clasificacion
@@ -124,7 +124,7 @@ Las listas rojas de especies amenazadas de extinción han sido fundamentales  ..
 
 This shows how the CMS is configured to define the UI and the structure of the markdown above.
 
-```
+```yml
 - name: "methods"
   label: "Métodos"
   editor:
