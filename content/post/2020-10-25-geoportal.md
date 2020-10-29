@@ -47,7 +47,7 @@ First, each one of these solutions would require a hosting service to run the se
 
 In addition, each solution comes with a pretty heavy technology stack that needs to be mastered in order to implement meaningful customizations. Django, Spring, Tomcat, JQuery (among others), Oh my! Who is going to support and maintain that?
 
-And finally, the functionality generally provided by these solutions seems to be overkill for the capabilities required by this site.
+Bottomline, the functionality generally provided by these solutions seems to be overkill for the capabilities required by this site.
 
 <p align="center">
   <img width="500" src="/images/uploads/cannon.svg"/>
