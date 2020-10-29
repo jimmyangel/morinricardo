@@ -23,7 +23,7 @@ In this post, I introduce key project requirements and the overall design of the
 
 * **Web Application** - Accessible from standard, modern Web browsers.
 
-* **Publish data sets** - Provide the ability for authorized Provita users to upload GI) vector data sets in [shapefile](https://en.wikipedia.org/wiki/Shapefile) format (packaged in .zip files) and raster GIS data sets in geotiff format; data sets of arbitrary size shall be supported; data sets shall be available for download using a simple interface including an optional anonymous survey.
+* **Publish data sets** - Provide the ability for authorized Provita users to upload GIS vector data sets in [shapefile](https://en.wikipedia.org/wiki/Shapefile) format (packaged in .zip files) and raster GIS data sets in geotiff format; data sets of arbitrary size shall be supported; data sets shall be available for download using a simple interface including the submission of an optional anonymous survey.
 
 * **Publish metadata** - Provide the ability to associate metadata about the published data sets, including description, date, format, source, and keywords (or tags).
 
@@ -41,11 +41,11 @@ In this post, I introduce key project requirements and the overall design of the
 
 ## Design considerations
 
-To develop this site, I looked around for some existing solutions, both commercial and open source, that I could adapt to meet our requirements. Unfortunately, I was not able to find anything truly affordable. I looked at [Open Geoportal](http://opengeoportal.io/), [Esri Geoportal Server](https://www.esri.com/en-us/arcgis/products/geoportal-server/overview), [GeoNode](http://geonode.org/), and the possibility of setting up a custom solution using [Geoserver](http://geoserver.org/).
+To develop this site, I looked around for some existing solutions, both commercial and open source, that I could adapt to meet our requirements. However, I was not able to find anything that was truly affordable. I looked at several solutions like [Open Geoportal](http://opengeoportal.io/), [Esri Geoportal Server](https://www.esri.com/en-us/arcgis/products/geoportal-server/overview), [GeoNode](http://geonode.org/), as well as the possibility of setting up a custom solution using [Geoserver](http://geoserver.org/).
 
 First, each one of these solutions would require a hosting service to run the server components or signing up for a 3rd party proprietary GIS service. That means $$$. In addition, server components need to be monitored and maintained. More $$$.
 
-Second, each solution comes with a pretty heavy technology stack that needs to be mastered in order to implement meaningful customizations. Django, Spring, Tomcat, JQuery (among others), Oh my! Who is going to support and maintain that?
+In addition, each solution comes with a pretty heavy technology stack that needs to be mastered in order to implement meaningful customizations. Django, Spring, Tomcat, JQuery (among others), Oh my! Who is going to support and maintain that?
 
 And finally, the functionality generally provided by these solutions seems to be overkill for the capabilities required by this site.
 
