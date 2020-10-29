@@ -59,8 +59,8 @@ Here is my rough estimate of expected usage patterns:
 * There will be dozens of geospatial data sets (more than twenty but less than one thousand)
 * The sizes of the shared data set sizes will vary widely from a few megabytes all the way to a few hundred megabytes each
 * The content of the site will be updated a few times a year, but sometimes it may be updated once a day during busy periods
-* There will be a handful of admin users with have update privileges
-* There will be a few news releases per year, with several releases in a month during busy periods
+* There will be a handful of admin users with update privileges
+* There will be a few news releases per year, possibly with several releases in a month during busy periods
 * The maximum number of concurrent end-users is unknown and difficult to predict, but given the specialized nature of the site, the traffic will likely be modest.
 
 <p align="center">
@@ -77,7 +77,7 @@ Given the requirements and expected usage of the site, I believe that adopting a
 
 ## Design overview
 
-And here is the obligatory diagram depicting the high level design of the system:
+And here is the obligatory diagram depicting the high level design of the system. It shows the main system components, grouped by the cloud service used to host them.
 
 <p align="center">
   <img src="/images/uploads/geoportal-high-level.svg"/>
@@ -111,4 +111,4 @@ And here is the obligatory diagram depicting the high level design of the system
 
 In a series of upcoming topic-specific posts, I will dig deeper in the implementation details of the site.
 
-Ciao!
+Until then, ciao!
