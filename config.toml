@@ -10,7 +10,6 @@ GoogleAnalytics = "UA-64070309-3"
 disqusShortname = "jimmyangel"
 
 [taxonomies]
-  category = "categories"
   tag = "tags"
 
 [params]
