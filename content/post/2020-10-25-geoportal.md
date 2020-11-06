@@ -1,5 +1,5 @@
 ---
-title: "Developing a serverless Geoportal using the JAMStack"
+title: Developing a serverless Geoportal using the JAMStack
 tags:
   - geoportal
   - netlify
@@ -82,6 +82,13 @@ And here is the obligatory diagram depicting the high level design of the system
 <p align="center">
   <img src="/images/uploads/geoportal-high-level.svg"/>
 </p>
+
+### User types
+
+|Service|Description|
+|-----|-----|
+|End-users|The target audience of the site. Includes researchers, students, and the general public. End-users consume the content published on the site by viewing data set tiles on an interactive map, and downloading vector and raster data sets.|
+|Admin users|Members of the Provita team who have the privileges to add, edit and remove content from the site. We take advantage of the Github identity system to validate user permissions to modify the site's content. A user has admin privileges if she or he as been added as a collaborator to the content repository.|
 
 ### Services used
 
