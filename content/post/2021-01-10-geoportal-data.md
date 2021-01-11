@@ -91,7 +91,7 @@ These files are used by the site’s interactive map data set pre-view functiona
 
 The files are generated using [AWS Batch](https://aws.amazon.com/batch/) jobs which are triggered automatically by the site's Admin function. They are stored in AWS S3, have public-read access, and as a side benefit, can be accessed by any GIS user using a standard map tiling scheme url.
 
-[Vector tiles](https://en.wikipedia.org/wiki/Vector_tiles) are stored in compressed (gzip) [PFB](https://docs.mapbox.com/vector-tiles/specification/) format. [Raster tiles](https://en.wikipedia.org/wiki/Tiled_web_map) are stored in PNG format.
+[Vector tiles](https://en.wikipedia.org/wiki/Vector_tiles) are stored in compressed (gzip) [PBF](https://docs.mapbox.com/vector-tiles/specification/) format. [Raster tiles](https://en.wikipedia.org/wiki/Tiled_web_map) are stored in PNG format.
 
 Pre-generating map tiles is analogous to pre-rendering the site itself: instead of using a GIS server to generate (and cache) tiles on the fly, we generate all the tiles once (and whenever GIS files are replaced) and deploy them as static files.
 
@@ -111,7 +111,7 @@ As a handy reference, here is a quick summary of the discussion above.
 |----|----|-----|----|---|
 | Site content |<ul><li>GIS Metadata</li><br><li>About</li><li>Contact</li><li>FAQ</li><li>News</li><li>Survey template</li><br><li>Images</li></ul> |<ul><li>JSON</li><br><li>Markdown</li><li>JSON</li><li>JSON</li><li>JSON</li><li>JSON</li><br><li>JPG, PNG</li></ul>| Public-read<br>Admin-write | Github |
 | Uploaded GIS data sets |<ul><li>Shapefile bundles</li><li>GeoTIFF files</li></ul>| <ul><li>ZIP</li><li>TIF</li></ul> | Public-read<br>Admin-write | AWS S3 |
-| Generated GIS tiles |<ul><li>Vector tiles</li><li>Raster tiles</li></ul>|<ul><li>PFB</li><li>PNG</li></ul>| Public-read<br>Admin&#8209;write | AWS S3 |
+| Generated GIS tiles |<ul><li>Vector tiles</li><li>Raster tiles</li></ul>|<ul><li>PBF</li><li>PNG</li></ul>| Public-read<br>Admin&#8209;write | AWS S3 |
 | User content | <ul><li>Survey responses</li><ul> | <ul><li>JSON</li><ul> | Public-write<br>Admin-read | AWS S3 |
 
 ---
