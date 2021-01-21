@@ -116,6 +116,6 @@ And here is the obligatory diagram depicting the high level design of the system
 
 ---
 
-In a series of upcoming topic-specific posts, I will dig deeper in the implementation details of the site.
+In a series of [upcoming](https://morinricardo.com/post/2021-01-10-geoportal-data/) topic-specific posts, I will dig deeper in the implementation details of the site.
 
 Until then, ciao!
