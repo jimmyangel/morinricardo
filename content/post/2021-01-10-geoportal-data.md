@@ -95,7 +95,7 @@ The files are generated using [AWS Batch](https://aws.amazon.com/batch/) jobs wh
 
 Pre-generating map tiles is analogous to pre-rendering the site itself: instead of using a GIS server to generate (and cache) tiles on the fly, we generate all the tiles once (and whenever GIS files are replaced) and deploy them as static files.
 
-This data category is best stored in AWS S3 versus Github, because it is comprised of thousands of small files which do not need to be tracked for changes. Therefore, the associated Github performance overhead is not justified.
+This data category is best stored in AWS S3 versus Github, because it is comprised of thousands of small files which do not need to be tracked for changes. Therefore, the associated Github performance overhead would not be justified.
 
 ### User content
 
