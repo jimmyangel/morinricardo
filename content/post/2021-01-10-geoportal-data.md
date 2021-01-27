@@ -118,6 +118,6 @@ As a handy reference, here is a quick summary of the discussion above.
 
 I hope this post provides valuable insights into how the data is managed in the Provita Geoportal.
 
-In upcoming posts I will continue to dig into various implementation details of the site.
+In [upcoming](/post/2021-01-25-geoportal-auth/) posts I will continue to dig into various implementation details of the site.
 
 Au revoir !
