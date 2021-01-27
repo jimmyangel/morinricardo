@@ -29,7 +29,7 @@ We need to be able to 1) authenticate admin users, and 2) authorize admin users 
 <p align="center">
   <img src="/images/uploads/fence.jpg"/>
   <br>
-  <small><small>Source: <a href="https://pixabay.com/photos/fence-barrier-private-sea-closed-829072/">Pixabay</a></small></small>
+  <small><small>We need a gate for Admin users; Source: <a href="https://pixabay.com/photos/fence-barrier-private-sea-closed-829072/">Pixabay</a></small></small>
 </p>
 
 There are two key cloud services we use to store the site's data: GitHub and Amazon Web Services (AWS). Both have authentication and authorization capabilities available to developers, so rather than building our own system, why not just choose from one of these two?
@@ -63,7 +63,7 @@ The diagram below illustrates the OAuth flow needed to obtain an access token:
 <p align="center">
   <img src="/images/uploads/github-login.png"/>
   <br>
-  <small>GitHub login</small>
+  <small>GitHub authenticates the user for us</small>
 </p>
 
 3) After successful authentication, GitHub will invoke ```auth-callback``` with a grant code and the state parameter used in Step 1).
@@ -81,7 +81,7 @@ We need to keep the access token around because it is needed every time we call 
 <p align="center">
   <img src="/images/uploads/ticket.jpg"/>
   <br>
-  <small><small>Source: <a href="https://pixy.org/4214778/">Pixy.org</a></small></small>
+  <small><small>We need to keep the token around; Source: <a href="https://pixy.org/4214778/">Pixy.org</a></small></small>
 </p>
 
 Now, keep in mind that the access token is a sensitive piece of information, very much like a userid/password. Anyone in possession of the access token can push changes to any of the public repositories the GitHub user has access to!
