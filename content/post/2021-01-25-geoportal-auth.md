@@ -58,7 +58,7 @@ The diagram below illustrates the OAuth flow needed to obtain an access token:
   <small>The Admin Page initiates the process...</small>
 </p>
 
-2) As a result of ```auth-start```, the Admin Page is redirected to the GitHub authorization endpoint passing the requested [scope](https://docs.github.com/en/developers/apps/scopes-for-oauth-apps), the state token and, a redirect uri (which is the [```auth-callback```](https://github.com/jimmyangel/geoportal/blob/master/functions/auth-callback.js) Netlify (Lambda) function. If the user is not already logged in, GitHub will request the user's credentials (i.e., user authentication) to authorize the Geoportal application to get the access it needs (this is defined by the ```scope``` parameter, which in our case is ```read:user public_repo```). By the way, if the user is already logged in, the process continues unobtrusively without further user interaction.
+2) As a result of ```auth-start```, the Admin Page is redirected to the GitHub authorization endpoint passing the requested [scope](https://docs.github.com/en/developers/apps/scopes-for-oauth-apps), the state token and, a redirect uri (which is the [```auth-callback```](https://github.com/jimmyangel/geoportal/blob/master/functions/auth-callback.js) Netlify (Lambda) function). If the user is not already logged in, GitHub will request the user's credentials (i.e., user authentication) to authorize the Geoportal application to get the access it needs (this is defined by the ```scope``` parameter, which in our case is ```read:user public_repo```). By the way, if the user is already logged in, the process continues unobtrusively without further user interaction.
 
 <p align="center">
   <img src="/images/uploads/github-login.png"/>
