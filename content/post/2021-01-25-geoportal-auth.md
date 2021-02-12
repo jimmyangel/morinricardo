@@ -50,7 +50,7 @@ The diagram below illustrates the OAuth flow needed to obtain an access token:
   <small>OAuth Sequence Diagram</small>
 </p>
 
-1) The Admin Page initiates the process by going to (```window.location.href```) the Netlify (Lambda) function [```auth-start```](https://github.com/jimmyangel/geoportal/blob/master/functions/auth-start.js). The url includes a randomly generated, unguessable, state query parameter to prevent certain types of attacks to the protocol (for protocol details, see [here](https://tools.ietf.org/html/rfc6749#section-10.12)). Since the state token will come back along with the access token, we prepend the **current** locale code (e.g., "en") to the state token so that we can extract it later to render the expected language after coming back from GitHub (i.e., /admin vs. /en/admin). The state token is saved in the browser's session storage for later comparison.
+1) The Admin Page initiates the process by going to (```window.location.href```) the Netlify (Lambda) function [```auth-start```](https://github.com/Provitaonline/geoportal/blob/master/functions/auth-start.js). The url includes a randomly generated, unguessable, state query parameter to prevent certain types of attacks to the protocol (for protocol details, see [here](https://tools.ietf.org/html/rfc6749#section-10.12)). Since the state token will come back along with the access token, we prepend the **current** locale code (e.g., "en") to the state token so that we can extract it later to render the expected language after coming back from GitHub (i.e., /admin vs. /en/admin). The state token is saved in the browser's session storage for later comparison.
 
 <p align="center">
   <img width="70%" src="/images/uploads/github-connect.png"/>
@@ -58,7 +58,7 @@ The diagram below illustrates the OAuth flow needed to obtain an access token:
   <small>The Admin Page initiates the process...</small>
 </p>
 
-2) As a result of ```auth-start```, the Admin Page is redirected to the GitHub authorization endpoint passing the requested [scope](https://docs.github.com/en/developers/apps/scopes-for-oauth-apps), the state token and, a redirect uri (which is the [```auth-callback```](https://github.com/jimmyangel/geoportal/blob/master/functions/auth-callback.js) Netlify (Lambda) function). If the user is not already logged in, GitHub will request the user's credentials (i.e., user authentication) to authorize the Geoportal application to get the access it needs (this is defined by the ```scope``` parameter, which in our case is ```read:user public_repo```). By the way, if the user is already logged in, the process continues unobtrusively without further user interaction.
+2) As a result of ```auth-start```, the Admin Page is redirected to the GitHub authorization endpoint passing the requested [scope](https://docs.github.com/en/developers/apps/scopes-for-oauth-apps), the state token and, a redirect uri (which is the [```auth-callback```](https://github.com/Provitaonline/geoportal/blob/master/functions/auth-callback.js) Netlify (Lambda) function). If the user is not already logged in, GitHub will request the user's credentials (i.e., user authentication) to authorize the Geoportal application to get the access it needs (this is defined by the ```scope``` parameter, which in our case is ```read:user public_repo```). By the way, if the user is already logged in, the process continues unobtrusively without further user interaction.
 
 <p align="center">
   <img src="/images/uploads/github-login.png"/>
@@ -100,7 +100,7 @@ As usual, there is always a compromise between security and convenience. In our 
 
 Ok, now with a GitHub access token we can access the GitHub-hosted data directly from the browser. But we still need to provide access control to items that need to be stored in AWS. How can we take advantage of the authorization provided by GitHub to control access to AWS resources?
 
-The approach is simply to wrap every AWS update function (e.g., [delete files](https://github.com/jimmyangel/geoportal/blob/master/functions/delete-files.js), [save user survey](https://github.com/jimmyangel/geoportal/blob/master/functions/send-survey.js)) in a Netlify (Lambda) function, pass the GitHub token to the function invocation, and before performing the requested action, check if the user's access token belongs to a collaborator on the data repository. Then, to access AWS resources, the Netlify (Lambda) function uses a single AWS user's (geoportalp) access key / secret pair configured via [Netlify environment variables](https://docs.netlify.com/configure-builds/environment-variables/). Cool!
+The approach is simply to wrap every AWS update function (e.g., [delete files](https://github.com/Provitaonline/geoportal/blob/master/functions/delete-files.js), [save user survey](https://github.com/Provitaonline/geoportal/blob/master/functions/send-survey.js)) in a Netlify (Lambda) function, pass the GitHub token to the function invocation, and before performing the requested action, check if the user's access token belongs to a collaborator on the data repository. Then, to access AWS resources, the Netlify (Lambda) function uses a single AWS user's (geoportalp) access key / secret pair configured via [Netlify environment variables](https://docs.netlify.com/configure-builds/environment-variables/). Cool!
 
 ## Wrapping up
 

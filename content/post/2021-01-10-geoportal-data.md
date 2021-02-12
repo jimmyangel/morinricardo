@@ -41,7 +41,7 @@ The following data types are defined in the site content category:
 |News|News stories text and images|JSON<br>JPG & PNG Images|NewsData|
 |User Survey Template|Definition of fields to capture in the user survey|JSON|UserSurveyTemplate|
 
-The data in this category are stored in a dedicated Github repository ([geoportal-data](https://github.com/jimmyangel/geoportal-data)), separate from the [main repository](https://github.com/jimmyangel/geoportal), but referenced as a [Git submodule](https://github.blog/2016-02-01-working-with-submodules/). The submodule is updated every time the site is generated via the "build" command, which is triggered by the "publish" button on the Admin page.
+The data in this category are stored in a dedicated Github repository ([geoportal-data](https://github.com/Provitaonline/geoportal-data)), separate from the [main repository](https://github.com/Provitaonline/geoportal), but referenced as a [Git submodule](https://github.blog/2016-02-01-working-with-submodules/). The submodule is updated every time the site is generated via the "build" command, which is triggered by the "publish" button on the Admin page.
 
 The Github repository used to hold the site content data is public, but it could be made private if desired. However, since all of the data stored on this repository are published onto a publicly accessible web site, there is no benefit in making the repository private. It is important to note that Admin users must be defined as "[collaborators](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/permission-levels-for-a-user-account-repository#collaborator-access-for-a-repository-owned-by-a-user-account)" in this repository to be able to update the data.
 
@@ -73,7 +73,7 @@ These files are stored using the [Amazon Web Services (AWS)](https://aws.amazon.
   <small>AWS S3</small>
 </p>
 
-In order to upload these files, Admin users must be defined as "collaborators" in the [geoportal-data](https://github.com/jimmyangel/geoportal-data) Github repository. Since this is not a capability that exists in AWS, the rule is enforced by a [Lambda function](https://aws.amazon.com/lambda/) ([Netlify function](https://www.netlify.com/products/functions/)).
+In order to upload these files, Admin users must be defined as "collaborators" in the [geoportal-data](https://github.com/Provitaonline/geoportal-data) Github repository. Since this is not a capability that exists in AWS, the rule is enforced by a [Lambda function](https://aws.amazon.com/lambda/) ([Netlify function](https://www.netlify.com/products/functions/)).
 
 For better performance, files are uploaded directly to AWS S3 from the Admin user's browser using AWS S3's [Presigned Post](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#createPresignedPost-property) links.
 
@@ -99,7 +99,7 @@ This data category is best stored in AWS S3 versus Github, because it is compris
 
 ### User content
 
-When end users fill out and submit the download survey, the data is saved in JSON format in AWS S3. These files can only be read by Admin users which are defined as "collaborators" in the [geoportal-data](https://github.com/jimmyangel/geoportal-data) Github repository. As with uploaded GIS data sets, this rule is enforced by a [Lambda function](https://aws.amazon.com/lambda/) ([Netlify function](https://www.netlify.com/products/functions/)).
+When end users fill out and submit the download survey, the data is saved in JSON format in AWS S3. These files can only be read by Admin users which are defined as "collaborators" in the [geoportal-data](https://github.com/Provitaonline/geoportal-data) Github repository. As with uploaded GIS data sets, this rule is enforced by a [Lambda function](https://aws.amazon.com/lambda/) ([Netlify function](https://www.netlify.com/products/functions/)).
 
 Storing user content in AWS S3 has the advantage of simplicity for implementing a public-write, private-read policy without the need of requiring any kind of identify or credentials from end-users. It works well in our use case, where the data consist of anonymous survey submissions.
 
