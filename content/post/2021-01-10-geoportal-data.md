@@ -63,7 +63,7 @@ An additional benefit of using Github is that we can easily leverage  Github ide
 
 ### Uploaded GIS data sets
 
-These are the actual GIS files published on the Geoportal as .ZIP archive files. Two types of files stored inside the .ZIP archive are supported: vector files which use the [Shapefile](https://en.wikipedia.org/wiki/Shapefile) format and raster files which use the [GeoTIFF](https://en.wikipedia.org/wiki/GeoTIFF) format.
+These are the actual GIS files published on the Geoportal as .ZIP archive files. Two types of files stored inside the .ZIP archives are supported: vector files which use the [Shapefile](https://en.wikipedia.org/wiki/Shapefile) format and raster files which use the [GeoTIFF](https://en.wikipedia.org/wiki/GeoTIFF) format.
 
 These files are stored using the [Amazon Web Services (AWS)](https://aws.amazon.com/) [Simple Storage Service (S3)](https://aws.amazon.com/s3/), and they are configured with public-read access.
 
