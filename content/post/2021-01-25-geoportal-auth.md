@@ -16,7 +16,7 @@ date: 2021-01-25T00:00:00.000Z
 
 Here, I continue discussing implementation details of the [Provita](https://www.provita.org.ve/) Geoportal. In my [first post](https://morinricardo.com/post/2020-10-25-geoportal/) on the topic, I discussed the overall design of the Geoportal. I [followed](https://morinricardo.com/post/2021-01-10-geoportal-data/) with a more detailed description focused on data organization and storage.
 
-In this post, I describe the approach used to provide an access control mechanism for Admin users to populate and maintain the content of the Geoportal.
+In this post (Updated Feb 17, 2021), I describe the approach used to provide an access control mechanism for Admin users to populate and maintain the content of the Geoportal.
 
 <!--more-->
 
@@ -96,11 +96,53 @@ Our options to save the access token are:
 
 As usual, there is always a compromise between security and convenience. In our case, we opted for the middle ground: save the token in the browser's session storage, which is erased when the associated browser tab is closed. So an Admin user navigating out to another site and coming back to the Admin Page will not require a reconnection.
 
+## "Wiring" the Github OAuth application
+
+A key part of the configuration needed to enable GiHub to dole out authorization tokens is to register an OAuth application with GitHub. This can be accomplished in the GitHub application owner ```Account settings -> Developer settings -> OAuth apps```.
+
+We have registered two applications for the Geoportal: one for production and one for testing.
+
+<p align="center">
+  <img src="/images/uploads/github-oauth-apps.png"/>
+  <br>
+  <small>One application for production and one for testing</small>
+</p>
+
+### Production application GitHub OAuth configuration
+
+Here is what the configuration looks like for the production application:
+
+<p align="center">
+  <img style="border: 1px solid #555;" src="/images/uploads/github-oauth-app.png"/>
+  <br>
+  <small>One application for production and one for testing</small>
+</p>
+
+The key fields are:
+
+| **Field** |**Description** |
+|----|----|
+|Client Id/Client Secret|These values are required by the OAuth protocol to obtain authorization tokens|
+|Homepage URL|The url of the Web application wishing to get authorization tokens|
+|Authorization callback URL|The url of the callback function (```auth-callback```)|
+
+### Using Netlify environment variable to pass secrets
+
+Finally, in order to avoid storing secrets anywhere in the application code and/or configuration files, we use [Netlify environment variables](https://docs.netlify.com/configure-builds/environment-variables/):
+
+<p align="center">
+  <img src="/images/uploads/netlify-env.png"/>
+  <br>
+  <small>Netlify environment variables are used to keep and pass secrets</small>
+</p>
+
+These variables are available to Netlify functions such as ```auth-start``` and ```auth-callback```.
+
 ## Using the access token to restrict access to AWS data
 
 Ok, now with a GitHub access token we can access the GitHub-hosted data directly from the browser. But we still need to provide access control to items that need to be stored in AWS. How can we take advantage of the authorization provided by GitHub to control access to AWS resources?
 
-The approach is simply to wrap every AWS update function (e.g., [delete files](https://github.com/Provitaonline/geoportal/blob/master/functions/delete-files.js), [save user survey](https://github.com/Provitaonline/geoportal/blob/master/functions/send-survey.js)) in a Netlify (Lambda) function, pass the GitHub token to the function invocation, and before performing the requested action, check if the user's access token belongs to a collaborator on the data repository. Then, to access AWS resources, the Netlify (Lambda) function uses a single AWS user's (geoportalp) access key / secret pair configured via [Netlify environment variables](https://docs.netlify.com/configure-builds/environment-variables/). Cool!
+The approach is simply to wrap every AWS update function (e.g., [delete files](https://github.com/Provitaonline/geoportal/blob/master/functions/delete-files.js), [save user survey](https://github.com/Provitaonline/geoportal/blob/master/functions/send-survey.js)) in a Netlify (Lambda) function, pass the GitHub token to the function invocation, and before performing the requested action, check if the user's access token belongs to a collaborator on the data repository. Then, to access AWS resources, the Netlify (Lambda) function uses a single AWS user's (geoportalp) access key / secret pair configured via Netlify environment variables. Cool!
 
 ## Wrapping up
 
