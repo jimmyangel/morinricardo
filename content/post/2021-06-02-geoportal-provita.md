@@ -90,7 +90,7 @@ Click on the little flag at the top right corner to choose your preferred langua
 
 If you want to know the technical details about how I built the Geoportal, head over to the following posts:
 
-* [Developing a serverless Geoportal using the JAMStack](http://localhost:1313/post/2020-10-25-geoportal/)
+* [Developing a serverless Geoportal using the JAMStack](https://morinricardo.com/post/2020-10-25-geoportal/)
 * [Serverless Geoportal: where is the data?](https://morinricardo.com/post/2021-01-10-geoportal-data/)
 * [Serverless Geoportal: Admin authorization](https://morinricardo.com/post/2021-01-25-geoportal-auth/)
 
