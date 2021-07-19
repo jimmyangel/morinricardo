@@ -96,6 +96,6 @@ If you want to know the technical details about how I built the Geoportal, head 
 
 ---
 
-Ok, that was a brief overview of the Provita Geoportal. In a future post, I will describe how the content of the site is managed using the "behind the scenes" Admin capability.
+Ok, that was a brief overview of the Provita Geoportal. In a [future post](/post/2021-06-02-geoportal-provita-admin/), I will describe how the content of the site is managed using the "behind the scenes" Admin capability.
 
 Goodbye!
