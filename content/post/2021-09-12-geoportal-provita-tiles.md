@@ -11,11 +11,11 @@ date: 2021-09-12T00:00:00.000Z
 
 On this post, I describe the approach used by the [Provita Geoportal](https://geoportal.provita.org.ve/en/) to pre-generate map preview tiles using a serverless approach.
 
-<!--more-->
-
 ## Why pre-generate tiles?
 
 Traditionally, map tiles are generated dynamically (and cached) using a GIS server. This requires installation, monitoring and maintenance of some server capability, whether it is a physical server somewhere, a hosted virtual machine, or perhaps a container image hosted in some cloud service provider. A solution like this would most likely require hosting database management system as well. And we don't want any of that.
+
+<!--more-->
 
 As described on an [earlier post](/post/2020-10-25-geoportal/), two of key requirements of the Provita Geoportal are: a) hands-off maintenance and b) low-cost deployment. And these two requirements drove the adoption of the [JAMStack](https://jamstack.org/) approach.
 
