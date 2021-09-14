@@ -19,7 +19,7 @@ Traditionally, [map tiles](https://en.wikipedia.org/wiki/Tiled_web_map) are gene
 
 As described on an [earlier post](/post/2020-10-25-geoportal/), two of key requirements of the Provita Geoportal are: a) hands-off maintenance and b) low-cost deployment. And these two requirements drove the adoption of the [JAMStack](https://jamstack.org/) approach.
 
-[Map tiles](https://en.wikipedia.org/wiki/Tiled_web_map) are just files with unique urls which follow a predefined numbering scheme corresponding to zoom level, X coordinate and Y coordinate (i.e., ```https://{host}/{path}/{z}/{x}/{y}.{ext}```). Therefore, they could be easily mapped to pre-generated files and served as files following the appropriate directory structure, rather than using an intermediary layer like a GIS server.
+[Map tiles](https://en.wikipedia.org/wiki/Tiled_web_map) are just files with unique urls which follow a predefined numbering scheme corresponding to zoom level, X coordinate and Y coordinate (i.e., ```http(s)://{host}/{path}/{z}/{x}/{y}.{ext}```). Therefore, they could be easily mapped to pre-generated files and served as files following the appropriate directory structure, rather than using an intermediary layer like a GIS server.
 
 In fact, pre-generating tiles when the source files or the metadata changes is analogous to building the site when content is updated. So, pre-generating tiles seems to be an approach quite compatible with the [JAMStack](https://jamstack.org/) concept. We just need to figure out a [serverless](https://en.wikipedia.org/wiki/Serverless_computing) way of doing it.
 
