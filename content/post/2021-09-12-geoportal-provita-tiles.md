@@ -196,7 +196,7 @@ Ok, now that we have defined our [AWS Batch](https://aws.amazon.com/batch/) comp
 The batch job invocation point will depend on what type of tiles are being generated. For vector tiles, the batch job can be invoked immediately after a GIS file is uploaded.
 
 <p align="center">
-  <img src="http://www.plantuml.com/plantuml/svg/XOynJmGX48LxViM4VYix2tDhSus52J4sDBFBU69W833ixvUiNivizjQIpFSztZjLmI8j1ZNEaWheqKNFq2eLhN8_-TbdP05zffHJ4GoMVvXNlD26US4uERHSsnIz35zfsW3Zku5dbFdJykMQbuT5VA2wWve7orhzxGJ3qxqgy0XlEIHqiD2wvQEdgdjmpxbzSLCF-PrvtJJh2_fBxHBTFDxTCyx4L53eMdqzg7-qxGI32_sQ9sBNOlW6">
+  <img src="https://www.plantuml.com/plantuml/svg/XOynJmGX48LxViM4VYix2tDhSus52J4sDBFBU69W833ixvUiNivizjQIpFSztZjLmI8j1ZNEaWheqKNFq2eLhN8_-TbdP05zffHJ4GoMVvXNlD26US4uERHSsnIz35zfsW3Zku5dbFdJykMQbuT5VA2wWve7orhzxGJ3qxqgy0XlEIHqiD2wvQEdgdjmpxbzSLCF-PrvtJJh2_fBxHBTFDxTCyx4L53eMdqzg7-qxGI32_sQ9sBNOlW6">
   <br>
   <small>Vector tile generation</small>
 </p>
