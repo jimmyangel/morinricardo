@@ -9,23 +9,23 @@ tags:
 date: 2021-09-12T00:00:00.000Z
 ---
 
-On this post, I describe the approach used by the [Provita Geoportal](https://geoportal.provita.org.ve/en/) to pre-generate map preview tiles using a serverless approach.
+On this post, I describe the approach used by the [Provita Geoportal](https://geoportal.provita.org.ve/en/) to pre-generate map preview tiles using a [serverless](https://en.wikipedia.org/wiki/Serverless_computing) approach.
 
 ## Why pre-generate tiles?
 
-Traditionally, map tiles are generated dynamically (and cached) using a GIS server. This requires installation, monitoring and maintenance of some server capability, whether it is a physical server somewhere, a hosted virtual machine, or perhaps a container image hosted in some cloud service provider. A solution like this would most likely require hosting database management system as well. And we don't want any of that!
+Traditionally, [map tiles](https://en.wikipedia.org/wiki/Tiled_web_map) are generated dynamically (and cached) using a GIS server. This requires installation, monitoring and maintenance of some server capability, whether it is a physical server somewhere, a hosted virtual machine, or perhaps a container image hosted in some cloud service provider. A solution like this would most likely require hosting database management system as well. And we don't want any of that!
 
 <!--more-->
 
 As described on an [earlier post](/post/2020-10-25-geoportal/), two of key requirements of the Provita Geoportal are: a) hands-off maintenance and b) low-cost deployment. And these two requirements drove the adoption of the [JAMStack](https://jamstack.org/) approach.
 
-Map tiles are just files with unique urls which follow a predefined numbering scheme corresponding to zoom level, X coordinate and Y coordinate. Therefore, they could be easily mapped to pre-generated files and served as files following the appropriate directory structure, rather than using an intermediary layer like a GIS server.
+[Map tiles](https://en.wikipedia.org/wiki/Tiled_web_map) are just files with unique urls which follow a predefined numbering scheme corresponding to zoom level, X coordinate and Y coordinate (i.e., ```https://{host}/{path}/{z}/{x}/{y}.{ext}```). Therefore, they could be easily mapped to pre-generated files and served as files following the appropriate directory structure, rather than using an intermediary layer like a GIS server.
 
-In fact, pre-generating tiles when the source files or the metadata changes is analogous to building the site when content is updated. So, pre-generating tiles seems to be an approach quite compatible with the [JAMStack](https://jamstack.org/) concept. We just need to figure out a serverless way of doing it.
+In fact, pre-generating tiles when the source files or the metadata changes is analogous to building the site when content is updated. So, pre-generating tiles seems to be an approach quite compatible with the [JAMStack](https://jamstack.org/) concept. We just need to figure out a [serverless](https://en.wikipedia.org/wiki/Serverless_computing) way of doing it.
 
 ## Pre-generating tiles from source GIS files
 
-Pre-generating tiles involves the execution of compute-intensive commands. The specific method used to pre-generate tile sets is different depending on whether we are dealing with vector (Shapefile format) or raster datasets (GeoTIFF format).
+Pre-generating tiles involves the execution of compute-intensive commands. The specific method used to pre-generate tile sets is different depending on whether we are dealing with vector ([Shapefile](https://en.wikipedia.org/wiki/Shapefile) format) or raster datasets ([GeoTIFF](https://en.wikipedia.org/wiki/GeoTIFF) format).
 
 ### Vector tile sets
 
@@ -46,7 +46,7 @@ The [tippecanoe](https://github.com/mapbox/tippecanoe) utility has a ton of opti
     $namelc.geojson                       # Input file (parameter)
 ```
 
-The [tippecanoe](https://github.com/mapbox/tippecanoe) utility takes a geojson file as input, so before running [tippecanoe](https://github.com/mapbox/tippecanoe) we generate a geojson file using the Shapefile source file. For this purpose, we use the [mapshaper](https://github.com/mbloch/mapshaper) command line utility.
+The [tippecanoe](https://github.com/mapbox/tippecanoe) utility takes a [geojson](https://geojson.org/) file as input, so before running [tippecanoe](https://github.com/mapbox/tippecanoe) we generate a [geojson](https://geojson.org/) file using the [Shapefile]((https://en.wikipedia.org/wiki/Shapefile)) source file. For this purpose, we use the [mapshaper](https://github.com/mbloch/mapshaper) command line utility.
 
 ### Raster tile sets
 
@@ -76,17 +76,17 @@ Raster tiles need to be styled at creation time, so they are generated after the
 
 ## Pre-generating tiles on-demand
 
-In keeping within our serverless approach, we need to dynamically allocate (and deallocate) cloud computational resources to execute the tile generation commands described above. Can we use [Amazon Web Services (AWS)](https://aws.amazon.com/) to achieve this goal? Yes, of course we can!
+In keeping within our [serverless](https://en.wikipedia.org/wiki/Serverless_computing) approach, we need to dynamically allocate (and deallocate) cloud computational resources to execute the tile generation commands described above. Can we use [Amazon Web Services (AWS)](https://aws.amazon.com/) to achieve this goal? Yes, of course we can!
 
 AWS [Lambda](https://aws.amazon.com/lambda/) functions are not appropriate in this case because these computations can be intensive and command execution can take several minutes to complete. [Lambda](https://aws.amazon.com/lambda/) functions are meant to run and return a result to the client very quickly (milliseconds), and should not block the user interface. In addition, the tile generation commands have a number of dependencies (e.g, tippecanoe, sqllite, gdal, aws-cli) that cannot be easily installed using [Lambda](https://aws.amazon.com/lambda/) functions.
 
 Enter [AWS Batch](https://aws.amazon.com/batch/). With this capability, we can run arbitrary jobs, on-demand, using customized [Docker](https://www.docker.com/) images. Thanks to [AWS Batch](https://aws.amazon.com/batch/), it is possible to request whatever computational resources we need (e.g, memory, CPUs) to execute batch jobs timely and efficiently. Resources are only allocated and used to satisfy job execution, thus minimizing the cost of running these commands. There is no need to have any computation resources (real, virtual, containerized) pre-instantiated  and available all the time.
 
-In addition, [AWS Batch](https://aws.amazon.com/batch/) provides the ability of running on ["Spot instances"](https://aws.amazon.com/ec2/spot/), to further optimize batch job execution costs. Spot instances are allocated using AWS excess capacity and they are priced with deep discounts (up to 90%). The only down side is that job execution can take a little longer while AWS finds and allocate resources, but it is usually no more than a couple of minutes.
+In addition, [AWS Batch](https://aws.amazon.com/batch/) provides the ability of running on ["Spot instances"](https://aws.amazon.com/ec2/spot/), to further optimize batch job execution costs. Spot instances are allocated using [AWS excess capacity](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html) and they are priced with deep discounts (up to 90%). The only down side is that job execution can take a little longer while [AWS finds and allocate resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/how-spot-instances-work.html), but it is usually no more than a couple of minutes. Also, spot instances can be interrupted or terminated, so we include a retry count in the batch job definitions.
 
 ## Setting up the AWS Batch Job environment
 
-[AWS](https://aws.amazon.com/) is a very powerful cloud environment, but it is also very complex. There are multiple ways of achieving the same thing, e.g., using the [AWS Console](https://aws.amazon.com/console/), using the [AWS API](https://docs.aws.amazon.com/general/latest/gr/aws-apis.html) or using the [AWS command line interface](https://aws.amazon.com/cli/). In addition, there are a number of [access control policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_controlling.html) that need to be set up to do just about anything in [AWS](https://aws.amazon.com/).
+[AWS](https://aws.amazon.com/) is a very powerful cloud environment, but it is also very complex. There are multiple ways of achieving the same thing, e.g., using the [AWS Console](https://aws.amazon.com/console/), using the [AWS API](https://aws.amazon.com/sdk-for-javascript/) or using the [AWS command line interface](https://aws.amazon.com/cli/). In addition, there are tons of configuration parameters and a number of [access control policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_controlling.html) that need to be set up to do just about anything in [AWS](https://aws.amazon.com/).
 
 In order to keep things repeatable and self-documented, we have opted to set up the [AWS](https://aws.amazon.com/) environment using the [AWS command line interface](https://aws.amazon.com/cli/). We have a [Github repo](https://github.com/Provitaonline/geoportal-batch) that contains the scripts necessary to set up the [AWS](https://aws.amazon.com/) environment for this project.
 
@@ -112,7 +112,7 @@ q) Quit (no changes)
 
 This part of the script is used to support all of our [AWS](https://aws.amazon.com/) activities, not just the [AWS Batch](https://aws.amazon.com/batch/) part, for example, [S3](https://aws.amazon.com/s3/).
 
-Here we create a user specifically to run the [AWS](https://aws.amazon.com/) APIs with restricted privileges, so that we do not use the [AWS](https://aws.amazon.com/) account administrator credentials anywhere in the application.
+Here we create a user specifically to run the [AWS APIs](https://aws.amazon.com/sdk-for-javascript/) with restricted privileges, so that we do not use the [AWS account administrator](https://activate.workshop.aws/020_landingzone/prepare/aws-side/administration/20-account-admin.html) credentials anywhere in the application.
 
 In this section we also create the [S3](https://aws.amazon.com/s3/) bucket where Geoportal keeps all of its files, including the public and private GIS files, pre-generated tiles, and private user survey responses.
 
@@ -172,7 +172,7 @@ In this section of the script, we create the [container images](https://www.dock
 For generating vector tiles, we use as standard [amazonlinux docker image](https://hub.docker.com/_/amazonlinux), and we install the following dependencies:
 
 * **deltarpm, which, unzip, aws-cli, git, sqlite-devel, curl, jq, development tools** - General purpose commands and utilities we need
-* **mapshaper** - We use [mapshaper](https://github.com/mbloch/mapshaper) to convert shapefile files to geojson, which is tippecanoe's required input format
+* **mapshaper** - We use [mapshaper](https://github.com/mbloch/mapshaper) to convert [shapefile]((https://en.wikipedia.org/wiki/Shapefile)) files to [geojson](https://geojson.org/), which is tippecanoe's required input format
 * **tippecanoe** - We use [tippecanoe](https://github.com/mapbox/tippecanoe) to generate vector tiles, as describe above.
 
 For generating raster tiles, we use an [osgeo/gdal docker image](https://github.com/OSGeo/gdal/tree/master/gdal/docker) (osgeo/gdal:ubuntu-small-latest) which is a small image that already has [GDAL](https://gdal.org/) and all of it's dependencies pre-installed. We use [GDAL](https://gdal.org/) as described above to generate raster tiles.
@@ -213,6 +213,6 @@ For raster tiles, we must wait until the administrator defines the tile styling 
 
 And that's it!
 
-In this post, I described how we are using [AWS Batch](https://aws.amazon.com/batch/) to pre-generate tiles in the most economical and resource-conscious way possible.
+On this post, I described how we are using [AWS Batch](https://aws.amazon.com/batch/) to pre-generate tiles in the most economical and resource-conscious way possible.
 
 Ah! On [September 29](https://callforpapers.2021.foss4g.org/foss4g2021/talk/GRQYCU/) I will be presenting the [Provita Geoportal](https://geoportal.provita.org.ve/en/) implementation at the [FOSS4G Buenos Aires conference](https://2021.foss4g.org/). See you there!
