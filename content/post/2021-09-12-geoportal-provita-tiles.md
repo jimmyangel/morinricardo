@@ -23,7 +23,7 @@ Map tiles are just files with unique urls which follow a predefined numbering sc
 
 In fact, pre-generating tiles when the source files or the metadata changes is analogous to building the site when content is updated. So, pre-generating tiles seems to be an approach quite compatible with the [JAMStack](https://jamstack.org/) concept. We just need to figure out a serverless way of doing it.
 
-## Pre-generate tiles from source GIS files
+## Pre-generating tiles from source GIS files
 
 Pre-generating tiles involves the execution of compute-intensive commands. The specific method used to pre-generate tile sets is different depending on whether we are dealing with vector (Shapefile format) or raster datasets (GeoTIFF format).
 
