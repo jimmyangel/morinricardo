@@ -13,7 +13,7 @@ On this post, I describe the approach used by the [Provita Geoportal](https://ge
 
 ## Why pre-generate tiles?
 
-Traditionally, map tiles are generated dynamically (and cached) using a GIS server. This requires installation, monitoring and maintenance of some server capability, whether it is a physical server somewhere, a hosted virtual machine, or perhaps a container image hosted in some cloud service provider. A solution like this would most likely require hosting database management system as well. And we don't want any of that.
+Traditionally, map tiles are generated dynamically (and cached) using a GIS server. This requires installation, monitoring and maintenance of some server capability, whether it is a physical server somewhere, a hosted virtual machine, or perhaps a container image hosted in some cloud service provider. A solution like this would most likely require hosting database management system as well. And we don't want any of that!
 
 <!--more-->
 
