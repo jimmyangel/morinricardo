@@ -134,6 +134,6 @@ The survey download function requires selecting the survey version of interest. 
 
 ---
 
-In this post, I gave an overview of the Admin functionality of the Provita Geoportal. In future posts, I will continue describing the technical details behind the site, for example, how the pre-view tiles are auto-generated using a "serverless" approach.
+On this post, I gave an overview of the Admin functionality of the Provita Geoportal. On [future posts](/post/2021-09-12-geoportal-provita-tiles/), I will continue describing the technical details behind the site, for example, how the pre-view tiles are auto-generated using a "serverless" approach.
 
 ¡Hasta la vista!
