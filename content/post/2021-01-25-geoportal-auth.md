@@ -156,6 +156,6 @@ The approach is simply to wrap every AWS update function (e.g., [delete files](h
 
 ---
 
-In upcoming posts I will continue describing additional implementation details of Geoportal.
+In [upcoming](/post/2021-06-02-geoportal-provita/) posts I will continue describing additional implementation details of Geoportal.
 
 ¡Hasta la vista!
