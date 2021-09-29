@@ -46,7 +46,7 @@ The [tippecanoe](https://github.com/mapbox/tippecanoe) utility has a ton of opti
     $namelc.geojson                       # Input file (parameter)
 ```
 
-The [tippecanoe](https://github.com/mapbox/tippecanoe) utility takes a [geojson](https://geojson.org/) file as input, so before running [tippecanoe](https://github.com/mapbox/tippecanoe) we generate a [geojson](https://geojson.org/) file using the [Shapefile]((https://en.wikipedia.org/wiki/Shapefile)) source file. For this purpose, we use the [mapshaper](https://github.com/mbloch/mapshaper) command line utility.
+The [tippecanoe](https://github.com/mapbox/tippecanoe) utility takes a [geojson](https://geojson.org/) file as input, so before running [tippecanoe](https://github.com/mapbox/tippecanoe) we generate a [geojson](https://geojson.org/) file using the [Shapefile](https://en.wikipedia.org/wiki/Shapefile) source file. For this purpose, we use the [mapshaper](https://github.com/mbloch/mapshaper) command line utility.
 
 ### Raster tile sets
 
