@@ -17,7 +17,7 @@ As I started playing with the Arduino board, I went into the rabbit hole of usin
 
 Since I wanted to improve my time travel experience, I decided to dig out my old copy of the project report and, oh no!, the pages are actually fading! Well, I thought, if I leave it just like that, after a couple of years there would be nothing but blank pages left. No more time travel!
 
-So I went ahead and scanned the old document and decided to post it on my here on my blog -- the document was, of course, typed using a typewriter by Evelin Hernandez. Word processors had just been invented and they were not widely available at the time.
+So I went ahead and scanned the old document and decided to post it here on my blog -- the document was, of course, typed using a typewriter by Evelin Hernandez. Word processors had just been invented and they were not widely available at the time.
 
 Here is the scanned and OCR'd PDF:
 <p align="center">
