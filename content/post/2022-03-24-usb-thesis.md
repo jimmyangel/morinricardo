@@ -1,6 +1,6 @@
 ---
 title: Personal archaeology - A boiler controller using a microprocessor (1979-1980)
-date: 2021-09-27
+date: 2022-03-24
 tags: ["rtos", "rmx-80", "microprocessor", "archaeology"]
 ---
 And now for something completely different and out of the blue.
