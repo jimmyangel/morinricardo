@@ -35,7 +35,7 @@ Here are some project highlights:
 * RMX/80 RTOS - Real-time executive operating system from Intel (yes, Intel!)
 * Intel PL/M-80 - A high level language inspired on IBM's PL/1
 * Intel iSBC 80/10 - Intel Single Board Computer based on the 8080 microprocessor
-* Tektronix 4006/1 - Storage tube technology graphics terminal (the school had one of these laying around so we grabbed it and did some graphics with it!
+* Tektronix 4006/1 - Storage tube technology graphics terminal (the school had one of these laying around so we grabbed it and did some graphics with it!)
 
 And here are some old pictures of the finished product (believe it or not, it **actually** worked!!):
 
