@@ -11,10 +11,9 @@ As I started playing with the Arduino board, I went into the rabbit hole of usin
 
 <!--more-->
 
-<div style="width:480px; margin: auto;">
-  <iframe allow="fullscreen" frameBorder="0" height="270" src="https://giphy.com/embed/TvT3ys0Dn1rPkGw1dy/video" width="480">
-  </iframe>
-</div>
+<p align="center">
+  <img src="/images/uploads/time-travel.gif">
+</p>
 
 Since I wanted to improve my time travel experience, I decided to dig out my old copy of the project report and, oh no!, the pages are actually fading! Well, I thought, if I leave it just like that, after a couple of years there would be nothing but blank pages left. No more time travel!
 
