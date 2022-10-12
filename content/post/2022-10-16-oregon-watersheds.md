@@ -5,11 +5,11 @@ tags:
   - howl
 date: 2022-10-10T00:00:00.000Z
 ---
-### Who's drinking water is influenced by any give spot on the map?
+### Who's drinking water is influenced by any given spot on the map?
 
-That is the question Oregon Wild wanted to be able to answer at a moment's notice.
+That is the question Oregon Wild wants to be able to answer at a moment's notice.
 
-My latest project as a volunteer for Oregon Wild was about drinking water in Oregon. The organization needed the data and a tool to easily understand the extent of Oregon's drinking watersheds and how populations are interconnected through common watersheds.
+My latest project as a volunteer for Oregon Wild seeks to answer that question. Oregon Wild needs data and a tool to easily understand the extent of Oregon's drinking watersheds and how populations are connected to any part of Oregon through common watersheds.
 
 <!--more-->
 
@@ -81,9 +81,9 @@ Notice how it is not merely an image, but the active Oregon Drinking Watersheds 
 
 <iframe width="100%" height="600" src="https://watersheds.oregonhowl.org/" frameborder="0"></iframe>
 
-The code used to display the site above is here:
+The code used to display the site above is:
 
-`<iframe width="100%" height="600" src="https://watersheds.oregonhowl.org/" frameborder="0"></iframe>`
+<code style="font-size: 12px;">&lt;iframe width="100%" height="600" src=&quot;https://watersheds.oregonhowl.org/&quot; frameborder="0"&gt;&lt;/iframe&gt;</code>
 
 ---
 
