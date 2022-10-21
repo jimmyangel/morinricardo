@@ -38,7 +38,7 @@ You will see a web map centered in Oregon, with a turquoise polygon layer, repre
 
 ### Viewing watersheds
 
-Click on a spot within any of the turquoise polygons. In the example below we show that the picked spot near Timothy Lake, connects 240,968 people through the Clackamas River watershed, which is highlighted in gray on the map.
+Click on a spot within any of the turquoise polygons. In the example below we show that the picked spot near Timothy Lake, connects 240,968 people through the water flow in the Clackamas River watershed. The watershed path is highlighted in gray on the map.
 
 A disturbance near that particular spot could potentially impact the drinking water of Estacada, Clackamas, Milwaukie, Oregon City and Lake Oswego!
 
@@ -46,9 +46,9 @@ A disturbance near that particular spot could potentially impact the drinking wa
 	<img src="/images/uploads/oregon-watersheds-spot.jpg"/>
 </p>
 
-By default, the list of communities is sorted by population in descending order. But it can also be shown in "downstream" order by clicking on the checkbox. The application will remember your selection the next time you come back using the same browser.
+By default, the list of communities in the information box is sorted by population in descending order. But it can also be shown in "downstream" order by clicking on the checkbox. By the way, the application will remember your selection the next time you come back, if you are using the same browser.
 
-Clicking on the community name (or the down arrow) displays more details about the water system for that community: Provider, Source, and Subbasin. The application also highlights the entire watershed for that community using a purple stripe pattern.
+Clicking on the community name (or the down arrow) displays more details about the water system for that community: Provider, Source, and Subbasin. At the same time, the application highlights the entire watershed for that community using a purple stripe pattern.
 
 <p align="center">
 	<img src="/images/uploads/oregon-watersheds-detail.jpg"/>
@@ -82,13 +82,13 @@ The [Open Source application](https://github.com/jimmyangel/watersheds) takes ad
 
 #### Mapping with [Leaflet](https://leafletjs.com/)
 
-For this application, I decided to use [Leaflet](https://leafletjs.com/), which in my experience, is the Open Source mapping library that delivers the quickest development time.
+For this application, I decided to use [Leaflet](https://leafletjs.com/). In my experience, [Leaflet](https://leafletjs.com/) is the Open Source mapping library that delivers the quickest development time.
 
 I have used [MapLibre](https://maplibre.org/) in the past because of its excellent performance, especially when accessing vector tiles, and I mulled over whether to use it for this project or not. I also considered [OpenLayers](https://openlayers.org/), which offers a vast array of geo-processing capabilities. In the end, for this relatively simple application, nothing beats [Leaflet's](https://leafletjs.com/) ease of use and healthy plug-in ecosystem.
 
 I augmented [Leaflet's](https://leafletjs.com/) capabilities with the following plug-ins:
 
-* [ESRI Leaflet](https://developers.arcgis.com/esri-leaflet/) - The Government-hosted "Oregon DEQ Hydrography" and "BLM Township and Range Grid" overlay layers are based on [ESRI's ArcGIS](https://www.esri.com/en-us/arcgis/about-arcgis/overview) mapping services. This plug-in simplifies access to these layers.
+* [ESRI Leaflet](https://developers.arcgis.com/esri-leaflet/) - The Government-hosted "[Oregon DEQ Hydrography](https://arcgis.deq.state.or.us/arcgis/rest/services/WQ/DEQ_Streams/MapServer/0)" and "[BLM Township and Range Grid](https://gis.blm.gov/arcgis/rest/services/Cadastral/BLM_Natl_PLSS_CadNSDI/MapServer/1)" overlay layers are based on [ESRI's ArcGIS](https://www.esri.com/en-us/arcgis/about-arcgis/overview) mapping services. This plug-in simplifies access to these layers.
 
 * [Leaflet PIP](https://github.com/mapbox/leaflet-pip) - This plug-in developed by [Mapbox](https://www.mapbox.com/), provides a convenient way of finding overlapping polygons under a given set of coordinates, which is **exactly** what I needed to do to expose connected watersheds.
 
@@ -106,10 +106,10 @@ On this post I described the latest web application I developed for [Oregon Wild
 
 I will talk about the underlying data on an upcoming post.
 
+Please contact me if you have any feedback or if you see any errors that need to be corrected.
+
 ---
 
 ### Thank you!
 
 Many thanks to Erik Fernandez of [Oregon Wild](https://oregonwild.org/) for giving me the opportunity to work on this project.
-
-Please contact me if you have any feedback or if you see any errors that need to be corrected.
