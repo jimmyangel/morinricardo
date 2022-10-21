@@ -12,8 +12,6 @@ That is the question [Oregon Wild](https://oregonwild.org/) wants to be able to 
 
 [Oregon Wild](https://oregonwild.org/) needs the data, and a tool, to easily understand the full extent of Oregon's drinking watersheds and how are populations connected to any Oregon location through common watersheds.
 
-Many thanks to Erik Fernandez of [Oregon Wild](https://oregonwild.org/) for giving me the opportunity to work on this project!
-
 <!--more-->
 
 ### Data analysis and a web application
@@ -40,17 +38,17 @@ You will see a web map centered in Oregon, with a turquoise polygon layer, repre
 
 ### Viewing watersheds
 
-Click on a spot within any of the turquoise polygons. In the example below, we show that the picked spot near Timothy Lake, connects 240,968 people through the Clackamas River watershed, which is highlighted in gray on the map.
+Click on a spot within any of the turquoise polygons. In the example below we show that the picked spot near Timothy Lake, connects 240,968 people through the Clackamas River watershed, which is highlighted in gray on the map.
 
-A disturbance near that particular spot could potentially impact the drinking water of Estacada, Clackamas, Milwaukie, Oregon City and Lake Oswego communities!
+A disturbance near that particular spot could potentially impact the drinking water of Estacada, Clackamas, Milwaukie, Oregon City and Lake Oswego!
 
 <p align="center">
 	<img src="/images/uploads/oregon-watersheds-spot.jpg"/>
 </p>
 
-By default, the list of communities is sorted by population in descending order. But it can also be shown in "downstream" order by clicking on the checkbox.
+By default, the list of communities is sorted by population in descending order. But it can also be shown in "downstream" order by clicking on the checkbox. The application will remember your selection the next time you come back using the same browser.
 
-Clicking on the community name (or the down arrow) displays more details about the water system for that community, and also highlights its entire watershed using a purple stripe pattern.
+Clicking on the community name (or the down arrow) displays more details about the water system for that community: Provider, Source, and Subbasin. The application also highlights the entire watershed for that community using a purple stripe pattern.
 
 <p align="center">
 	<img src="/images/uploads/oregon-watersheds-detail.jpg"/>
@@ -70,7 +68,7 @@ Select among three base maps: [World Topographic Map](http://www.arcgis.com/home
 
 The web application can be easily embedded in any web site by using the html `iframe` tag. Simply insert an `iframe` tag in your post or page with a link to site, like shown in the example below.
 
-Notice how it is not merely an image, but the active Oregon Drinking Watersheds site which you can fully interact with.
+Notice how it is not merely an image, but the active [Oregon Drinking Watersheds](https://watersheds.oregonhowl.org/) site which you can fully interact with.
 
 <iframe width="100%" height="600" src="https://watersheds.oregonhowl.org/" frameborder="0"></iframe>
 
@@ -107,5 +105,11 @@ I really like to keep all HTML out of the Javascript application code. [Handleba
 On this post I described the latest web application I developed for [Oregon Wild](https://oregonwild.org/) as a volunteer. I described its usage and capabilities, as well as the building blocks I used to create the site.
 
 I will talk about the underlying data on an upcoming post.
+
+---
+
+### Thank you!
+
+Many thanks to Erik Fernandez of [Oregon Wild](https://oregonwild.org/) for giving me the opportunity to work on this project.
 
 Please contact me if you have any feedback or if you see any errors that need to be corrected.
