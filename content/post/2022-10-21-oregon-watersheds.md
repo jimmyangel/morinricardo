@@ -18,7 +18,7 @@ That is the question [Oregon Wild](https://oregonwild.org/) wants to be able to 
 
 The project had two parts. First, we followed a rigorous and tricky analysis process using multiple data sources to generate a GIS dataset. Second, we created a web application that could be used by anyone to easily view Oregon's drinking watersheds and discover how populations and communities are interconnected through them.
 
-On this post, I introduce the web application: how to access it, how to use it, and how I built it. On an upcoming post, I will describe the process that we went through to compile and assemble the underlying data.
+On this post, I introduce the web application: how to access it, how to use it, and how we built it. On an upcoming post, I will describe the process that we went through to compile and assemble the underlying data.
 
 ### Accessing the web application
 
