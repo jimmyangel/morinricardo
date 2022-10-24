@@ -10,13 +10,18 @@ date: 2022-10-21T00:00:00.000Z
 
 That is the question [Oregon Wild](https://oregonwild.org/) wants to be able to answer at a moment's notice, and that's the subject of my latest volunteer project.
 
-[Oregon Wild](https://oregonwild.org/) needs the data and a tool, to help understand the full extent of Oregon's drinking watersheds and how are populations connected to any given Oregon location through common watersheds.
+[Oregon Wild](https://oregonwild.org/) needs the data and a tool, to help understand the full extent of Oregon's drinking watersheds and which populations are connected to any given Oregon location through common watersheds.
 
 <!--more-->
 
 ### Data analysis and a web application
 
-The project had two parts. First, we followed a rigorous and tricky analysis process using multiple data sources to generate a GIS dataset. Second, we created a web application that could be used by anyone to easily view Oregon's drinking watersheds and discover how populations and communities are interconnected through them.
+The project had two parts. Our starting point was the surface drinking watersheds Geographical Information Systems (GIS) dataset [published](https://www.oregon.gov/deq/wq/programs/pages/dwp-maps.aspx) by the [Oregon Department of Environmental Quality (DEQ)](https://www.oregon.gov/deq/pages/index.aspx).
+
+First, we followed a rigorous and tricky analysis process using multiple data sources to generate a new enhanced GIS dataset that fully
+maps each watershed and incorporates population data.
+
+Second, we created a web application that could be used by anyone to easily view Oregon's drinking watersheds and discover how populations and communities are interconnected through them.
 
 On this post, I introduce the web application: how to access it, how to use it, and how we built it. On an upcoming post, I will describe the process that we went through to compile and assemble the underlying data.
 
@@ -40,7 +45,7 @@ You will see a web map centered in Oregon, with a turquoise polygon layer, repre
 
 Click on a spot within any of the turquoise polygons. In the example below we show that the picked spot near Timothy Lake, connects 240,968 people through the water flow in the Clackamas River watershed. The watershed path is highlighted in gray on the map.
 
-A disturbance near that particular spot could potentially affect the drinking water quality of Estacada, Clackamas, Milwaukie, Oregon City and Lake Oswego!
+Logging, road building, or other disturbance near that particular spot could negatively affect the drinking water quality of Estacada, Clackamas, Milwaukie, Oregon City and Lake Oswego!
 
 <p align="center">
 	<img src="/images/uploads/oregon-watersheds-spot.jpg"/>
@@ -48,7 +53,7 @@ A disturbance near that particular spot could potentially affect the drinking wa
 
 By default, the list of communities shown in the information box is sorted in descending population order. But it can also be shown in "downstream" order by clicking on the checkbox. By the way, the application will remember your selection the next time you come back (if you are using the same browser).
 
-Clicking on the community name or the associated down arrow, displays more details about the water system for that community: Provider, Source, and Subbasin. At the same time, the application highlights the entire watershed for that community using a purple stripe pattern. In the example below, we are looking at Clackamas.
+Clicking on the community name or the associated down arrow, displays more details about the water system for that community: Provider, Source, and Subbasin. At the same time, the application highlights the entire watershed for that community using a purple stripe pattern. In the example below, we are looking at Oregon City.
 
 <p align="center">
 	<img src="/images/uploads/oregon-watersheds-detail.jpg"/>
