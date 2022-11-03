@@ -44,3 +44,15 @@ For example, for the city of Lake Oswego, PSU reports a population of 39,480 for
 We used [Oregon Rivers (Rivers Reach)](https://spatialdata.oregonexplorer.info/geoportal/details;id=161b8e74e7ef457180fba6429c9ee1ee) dataset and the [Oregon Watershed Boundary Dataset](https://spatialdata.oregonexplorer.info/geoportal/details;id=4b1b008d5a764a209b2df040689c0779) to assist in understanding water flows and watershed boundaries when analyzing areas with complicated topographies (e.g., Umpqua River), and areas where upstream watersheds were missing from the DEQ dataset (e.g., Rogue River, Chetco River).
 
 ## Methodology
+
+### Add population
+
+We consulted the population data sources and updated the DEQ watersheds with the corresponding figures. There are cases in which two or more watersheds are used to supply water to a single community. If the watersheds are independent, and belong to the same hydrological unit, we merged the watersheds into a single shape (e.g., City of Warrenton). If the watersheds fall under separate and independent hydrological units, we split the population evenly across watersheds (e.g., City of Powers). In some cases we had to do both (e.g., City of Corvallis).
+
+### Extend watersheds
+
+### Add missing watersheds
+
+### Remove groundwater watersheds
+
+### Compute total population per watershed
