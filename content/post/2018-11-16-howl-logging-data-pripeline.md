@@ -3,6 +3,7 @@ title: "Logging visualization: data pipeline documentation"
 tags:
   - leaflet
   - howl
+  - oregonwild
 date: 2018-11-16T00:00:00.000Z
 ---
 ### The logging visualization site integrates data from multiple sources

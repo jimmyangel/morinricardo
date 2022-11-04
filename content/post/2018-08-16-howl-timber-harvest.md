@@ -3,6 +3,7 @@ title: 'New HOWL Project: Logging Visualization'
 tags:
   - leaflet
   - howl
+  - oregonwild
 date: 2018-08-16T00:00:00.000Z
 ---
 ### Visualization and time-based animation of logging activities in Oregon
@@ -17,7 +18,7 @@ We are starting the project with the visualization of logging activities in Nati
 
 ### Accessing the visualization
 
-To view the latest version of the visualization, head over to [https://logging.oregonhowl.org](https://logging.oregonhowl.org/). The site is also embedded in the [HOWL](https://oregonhowl.org/) site as a new 'spotlight'. 
+To view the latest version of the visualization, head over to [https://logging.oregonhowl.org](https://logging.oregonhowl.org/). The site is also embedded in the [HOWL](https://oregonhowl.org/) site as a new 'spotlight'.
 
 As of this blog post's date, we are showing logging activities in National Forests where data is available, i.e., all forests except for Mount Hood and Siuslaw.
 

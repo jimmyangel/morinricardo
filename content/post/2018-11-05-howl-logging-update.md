@@ -3,6 +3,7 @@ title: "Logging visualization update: mo' data"
 tags:
   - leaflet
   - howl
+  - oregonwild
 date: 2018-11-05T00:00:00.000Z
 ---
 ### Visualization now includes BLM, private and state lands data

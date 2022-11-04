@@ -4,6 +4,7 @@ tags:
   - cesium
   - howl
   - 3d
+  - oregonwild
 date: 2018-04-14T00:00:00.000Z
 ---
 ### 3D time-based animation of recent (and current) wildfires in Oregon
