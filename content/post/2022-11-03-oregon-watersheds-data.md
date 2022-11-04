@@ -12,7 +12,7 @@ In my [previous post](/post/2022-10-21-oregon-watersheds/), I introduced the Ore
 
 We carried out this process under the direction of, and in partnership with Erik Fernandez of [Oregon Wild](https://oregonwild.org/).
 
-## The data for the watersheds site comes from multiple sources
+## The data for this project comes from multiple sources
 
 ### Drinking watershed data: Oregon Department of Environmental Quality (DEQ)
 
@@ -50,9 +50,9 @@ We used [Oregon Rivers (Rivers Reach)](https://spatialdata.oregonexplorer.info/g
 
 ### Objective
 
-The objective was to create a dataset in [Shapefile format](https://en.wikipedia.org/wiki/Shapefile) with the full extent of each drinking watershed and the population it serves. This is in contrast to the [DEQ](https://www.oregon.gov/deq/Pages/index.aspx) dataset which only maps watersheds from intake to intake, and does not include population data. Each watershed must also include the total downstream population (e.g, from current watershed and below).
+The objective was to create a dataset in [Shapefile format](https://en.wikipedia.org/wiki/Shapefile) with the full extent of each drinking watershed and the population it serves. This is in contrast to the [DEQ](https://www.oregon.gov/deq/Pages/index.aspx) dataset which only maps watersheds from intake to intake, and does not include population data. Each watershed must also include the total downstream population (i.e, from a given watershed and below).
 
-Note that all water systems located in shared watersheds are represented as overlapping polygons. Given an arbitrary geographical location, we can make a list of all polygons intersecting at that location (several items, or just one in case there are no overlaps). This exposes all the water systems related or connected to the location. Moreover, by sorting the list in descending order of total population, the list can be presented in downstream order!
+Note that all water systems located in shared watersheds are represented as overlapping polygons. Given an arbitrary geographical location, we can easily produce a list of all polygons that intersect that location (several items, or just one in case there are no overlaps). This exposes all the water systems related or connected to the location. Moreover, by sorting the list in descending order of total population, the list can be presented in downstream order!
 
 ### Tools
 
@@ -76,16 +76,16 @@ There are cases in which two or more watersheds are used to supply water to a si
 
 To delineate the full extent of each watershed, we performed the following steps:
 
-* Identified [DEQ](https://www.oregon.gov/deq/Pages/index.aspx) water systems that share a watershed (e.g., Clackamas); we used the [hydrography data](#hydro) to assist in this step
+* Identified set of [DEQ](https://www.oregon.gov/deq/Pages/index.aspx) water systems that share a watershed (e.g., Clackamas); we used the [hydrography data](#hydro) to assist in this step
 
 * Starting from the uppermost polygon in the set,
   * Made a copy of the polygon
   * Merged the copy with the next downstream polygon, taking the attributes of the latter
-  * Repeated going downstream until reaching the last polygon in the set
+  * Repeated going downstream one-by-one until reaching the last polygon in the set
 
-The method is the same, but it becomes a bit tricky, when we find watersheds that have multiple "branches" (e.g., Umpqua River). We used the [hydrography data](#hydro) to assist in determining the direction of the water flow. The method also works for tributary watersheds located inside larger watersheds (e.g, city of Ashland).
+The method is the same, but it becomes a bit tricky, when we find watersheds that have multiple "branches" (e.g., Umpqua River). We used the [hydrography data](#hydro) to assist in determining the direction of the water flow, to determine which polygons should be merged. This method also works for tributary watersheds located inside larger watersheds (e.g, city of Ashland).
 
-The example below shows the watershed for the city of Clackamas. On the left is the [DEQ](https://www.oregon.gov/deq/Pages/index.aspx) shape. On the right is the extended watershed, after performing the steps above.
+The example below shows the watershed for the city of Clackamas. On the left is the [DEQ](https://www.oregon.gov/deq/Pages/index.aspx) shape. On the right is the extended watershed, after performing the steps above for one iteration.
 
   <div style="display: flex; font-size: 0.75em;">
     <div align="center">
@@ -136,7 +136,7 @@ We implemented the algorithm using [QGIS' Python console](https://docs.qgis.org/
 
 #### Generate simplified dataset for the web application
 
-We generated a separate [GeoJSON](https://geojson.org/) dataset using the WGS84 coordinate reference system (CRS) to be used in the [web application](https://watersheds.oregonhowl.org/). To reduce the size of the dataset, we ran a simplification algorithm and limited the precision of the coordinates (latitude and longitude) to four decimals.
+We generated a separate [GeoJSON](https://geojson.org/) dataset using the [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System) coordinate reference system (CRS) to be used in the [web application](https://watersheds.oregonhowl.org/) (the source CRS is EPSG:2992 - NAD83 / Oregon GIC Lambert (ft)). To reduce the size of the dataset, we ran a simplification algorithm and limited the precision of the  latitude and longitude coordinates to four decimals.
 
 It should be noted that, for the web dataset, we decided to drop the Columbia watershed extensions to the cities of Clatskanie and Rainier, since the populations involved are relatively small, and the watershed cluttered the web view by its sheer size.
 
