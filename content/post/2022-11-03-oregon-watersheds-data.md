@@ -129,7 +129,6 @@ for each polygon P
     end if
   end for
 end for
-
 ```
 
 We implemented the algorithm using [QGIS' Python console](https://docs.qgis.org/3.28/en/docs/user_manual/plugins/python_console.html) capability.
