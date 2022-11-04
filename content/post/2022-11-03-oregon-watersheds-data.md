@@ -10,7 +10,7 @@ In my [previous post](/post/2022-10-21-oregon-watersheds/), I introduced the Ore
 
 <!--more-->
 
-We carried out this process under the direction, and in partnership with Erik Fernandez of [Oregon Wild](https://oregonwild.org/).
+We carried out this process under the direction of, and in partnership with Erik Fernandez of [Oregon Wild](https://oregonwild.org/).
 
 ## The data for the watersheds site comes from multiple sources
 
