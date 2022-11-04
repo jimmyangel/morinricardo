@@ -138,7 +138,7 @@ We implemented the algorithm using [QGIS' Python console](https://docs.qgis.org/
 
 We generated a separate [Geojson](https://geojson.org/) dataset using the WGS84 coordinate reference system (CRS) to be used in the [web application](https://watersheds.oregonhowl.org/). To reduce the size of the dataset, we ran a simplification algorithm and limited the precision of the coordinates (latitude and longitude) to four decimals.
 
-It should be noted that, for the web dataset, we decided to drop the Columbia watershed extensions to the cities of Clatskanie and Rainier, since the populations involved are relatively small, and the watershed cluttered the web view by their sheer size.
+It should be noted that, for the web dataset, we decided to drop the Columbia watershed extensions to the cities of Clatskanie and Rainier, since the populations involved are relatively small, and the watershed cluttered the web view by its sheer size.
 
 ---
 
