@@ -23,7 +23,7 @@ maps each watershed and incorporates population data.
 
 Second, we created a web application that could be used by anyone to easily view Oregon's drinking watersheds and discover how populations and communities are interconnected through them.
 
-On this post, I introduce the web application: how to access it, how to use it, and how we built it. On an upcoming post, I will describe the process that we went through to compile and assemble the underlying data.
+On this post, I introduce the web application: how to access it, how to use it, and how we built it. [On an upcoming post](/post/2022-11-03-oregon-watersheds-data/), I will describe the process that we went through to compile and assemble the underlying data.
 
 ### Accessing the web application
 
@@ -115,7 +115,7 @@ I really like to keep all HTML out of the Javascript application code. [Handleba
 
 On this post I described the latest web application I developed for [Oregon Wild](https://oregonwild.org/) as a volunteer. I described its usage and capabilities, as well as the building blocks I used to create the site.
 
-I will talk about the underlying data on an upcoming post.
+I will talk about the underlying data on an [upcoming post](/post/2022-11-03-oregon-watersheds-data/).
 
 Please contact me if you have any feedback or if you see any errors that need to be corrected.
 
