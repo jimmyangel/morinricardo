@@ -139,7 +139,7 @@ We generated a separate [GeoJSON](https://geojson.org/) dataset using the [WGS84
 
 To reduce the size of the dataset, we ran a simplification algorithm and limited the precision of the  latitude and longitude coordinates to four decimals.
 
-It should be noted that, for the web dataset, we decided to drop the Columbia watershed extensions to the cities of Clatskanie and Rainier, since the populations involved are relatively small, and the large polygon tended to clutter the web view by its sheer size.
+It should be noted that, for the web dataset, we decided to drop the Columbia watershed extensions to the cities of Clatskanie and Rainier, since the populations involved are relatively small, and the large polygons tended to clutter the web view by its sheer size.
 
 ---
 
