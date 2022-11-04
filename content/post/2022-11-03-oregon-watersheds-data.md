@@ -58,7 +58,7 @@ Note that all water systems located in shared watersheds are represented as over
 
 To perform this analysis, we used the [QGIS Geographical Information System (GIS)](https://qgis.org/en/site/). [QGIS](https://en.wikipedia.org/wiki/QGIS) is an open source application for geospatial analysis and mapmaking. It is an extremely powerful GIS package and it is free!
 
-We also used the [Mapshaper Command Line Interface (CLI)](https://github.com/mbloch/mapshaper/wiki) to generate the [Geojson](https://geojson.org/) dataset used by the [web application](https://watersheds.oregonhowl.org/). [Mapshaper](https://github.com/mbloch/mapshaper) is also open source and free.
+We also used the [Mapshaper Command Line Interface (CLI)](https://github.com/mbloch/mapshaper/wiki) to generate the [GeoJSON](https://geojson.org/) dataset used by the [web application](https://watersheds.oregonhowl.org/). [Mapshaper](https://github.com/mbloch/mapshaper) is also open source and free.
 
 ### Process
 
@@ -136,7 +136,7 @@ We implemented the algorithm using [QGIS' Python console](https://docs.qgis.org/
 
 #### Generate simplified dataset for the web application
 
-We generated a separate [Geojson](https://geojson.org/) dataset using the WGS84 coordinate reference system (CRS) to be used in the [web application](https://watersheds.oregonhowl.org/). To reduce the size of the dataset, we ran a simplification algorithm and limited the precision of the coordinates (latitude and longitude) to four decimals.
+We generated a separate [GeoJSON](https://geojson.org/) dataset using the WGS84 coordinate reference system (CRS) to be used in the [web application](https://watersheds.oregonhowl.org/). To reduce the size of the dataset, we ran a simplification algorithm and limited the precision of the coordinates (latitude and longitude) to four decimals.
 
 It should be noted that, for the web dataset, we decided to drop the Columbia watershed extensions to the cities of Clatskanie and Rainier, since the populations involved are relatively small, and the watershed cluttered the web view by its sheer size.
 
