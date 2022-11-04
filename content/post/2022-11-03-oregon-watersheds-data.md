@@ -12,7 +12,7 @@ In my [previous post](/post/2022-10-21-oregon-watersheds/), I introduced the Ore
 
 We carried out this process under the direction of, and in partnership with Erik Fernandez of [Oregon Wild](https://oregonwild.org/).
 
-## The data for this project comes from multiple sources
+## The data for this project come from multiple sources
 
 ### Drinking watershed data: Oregon Department of Environmental Quality (DEQ)
 
@@ -143,7 +143,7 @@ It should be noted that, for the web dataset, we decided to drop the Columbia wa
 
 ---
 
-The results of this project are available on [Github](https://github.com/jimmyangel/watersheds-data), and since all the data has been derived from U.S. and Oregon Government sources, they have been placed in the [Public Domain](https://creativecommons.org/publicdomain/zero/1.0/).
+The results of this project are available on [Github](https://github.com/jimmyangel/watersheds-data), and since all the data have been derived from U.S. and Oregon Government sources, they have been placed in the [Public Domain](https://creativecommons.org/publicdomain/zero/1.0/).
 
 Please contact me if you have any feedback or if you see any errors that need to be corrected.
 
