@@ -125,7 +125,15 @@ We ran a [geometry snapping algorithm](https://docs.qgis.org/3.28/en/docs/user_m
 
 #### Compute total population per watershed
 
-After all polygons were extended following the process described above, we ran an algorithm to compute the total populations associated with all polygons. The total population is defined as the sum of the populations associated with a given watershed plus all downstream watersheds. The algorithm is laid out below.
+After all watersheds were extended following the process described above, we ran an algorithm to compute the total populations associated with every watershed. The total population is defined as the sum of the populations associated with a given watershed plus all the downstream ones.
+
+Given the way we have constructed our dataset, in any set of intersecting polygons, the ones downstream are always larger in area than the ones upstream. So, to calculate the total population of a watershed, we just have to add to its population, the population of every larger (or equal) intersecting watershed.
+
+Moreover, in our dataset, since every intersecting polygon is fully contained inside of every one of the larger ones it intersects, just picking an arbitrary point inside of a polygon is sufficient to find intersecting polygons.
+
+Finally, rather than intersecting every polygon against every other one in the dataset, we can narrow down the number of intersection operations by using bounding boxes to select *candidate* polygons -- a much faster operation than an intersection, thanks to [QGIS' spatial index](https://docs.qgis.org/3.22/en/docs/pyqgis_developer_cookbook/vector.html?highlight=qgsspatialindex#using-spatial-index) feature. This reduces the number of actual intersection operations from about 35,000 to just about 560!
+
+The algorithm is laid out below.
 
 ```
 for each polygon P
@@ -139,7 +147,7 @@ for each polygon P
 end for
 ```
 
-We implemented the algorithm using [QGIS' Python console](https://docs.qgis.org/3.28/en/docs/user_manual/plugins/python_console.html) capability. You can inspect the actual code [here](https://github.com/jimmyangel/watersheds-data/blob/master/analysis/compute_total_population.py).
+We implemented the algorithm using [QGIS' Python console](https://docs.qgis.org/3.28/en/docs/user_manual/plugins/python_console.html) capability. It takes just about 10 seconds to run. You can inspect the code [here](https://github.com/jimmyangel/watersheds-data/blob/master/analysis/compute_total_population.py).
 
 #### Generate simplified dataset for the web application
 
