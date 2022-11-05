@@ -151,9 +151,9 @@ We implemented the algorithm using [QGIS' Python console](https://docs.qgis.org/
 
 #### Generate simplified dataset for the web application
 
-We [generated](https://github.com/jimmyangel/watersheds-data/blob/master/analysis/generate-web-layer.sh) a separate [GeoJSON](https://geojson.org/) dataset using the [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System) coordinate reference system (CRS) to be used in the [web application](https://watersheds.oregonhowl.org/) (the source CRS is EPSG:2992 - NAD83 / Oregon GIC Lambert (ft)).
+We [generated](https://github.com/jimmyangel/watersheds-data/blob/master/analysis/generate-web-layer.sh) a separate [GeoJSON](https://geojson.org/) dataset using the [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System) coordinate reference system (CRS) to be used in the [web application](https://watersheds.oregonhowl.org/) (the source CRS is [EPSG:2992 - NAD83 / Oregon GIC Lambert (ft)](https://www.oregon.gov/geo/pages/projections.aspx)).
 
-To reduce the size of the dataset, we ran a [simplification algorithm](https://github.com/mbloch/mapshaper/blob/master/REFERENCE.md#-simplify) and limited the precision of the  latitude and longitude coordinates to four decimals.
+To reduce the size of the dataset, we ran a [simplification algorithm](https://github.com/mbloch/mapshaper/blob/master/REFERENCE.md#-simplify) and [limited the precision](https://github.com/mbloch/mapshaper/blob/master/REFERENCE.md#-o-output) of the  latitude and longitude coordinates to four decimals.
 
 It should be noted that, for the web dataset, we decided to drop the Columbia watershed extensions to the cities of Clatskanie and Rainier, since the populations involved are relatively small, and the large polygons tended to clutter the web view by their sheer size.
 
@@ -161,7 +161,7 @@ It should be noted that, for the web dataset, we decided to drop the Columbia wa
 
 This project was quite complex with numerous difficult decisions on how best to represent the most accurate data and mapping available.
 
-Complicating factors for some cities and watersheds include cities that get their drinking water from multiple watersheds, and cities that get their drinking water from different sources based on time of year. We also suspect that there are many small watersheds that may only serve small populations which are not mapped by DEQ, and thus are not included in this analysis. We added those that we were aware of, but likely not all.
+Complicating factors for some cities and watersheds include cities that get their drinking water from multiple watersheds, and cities that get their drinking water from different sources based on time of year. We also suspect that there are many small watersheds that may only serve small populations which are not mapped by [DEQ](https://www.oregon.gov/deq/wq/programs/pages/dwp-maps.aspx), and thus are not included in this analysis. We added those that we were aware of, but likely not all.
 
 We attempted to stay true to answering the question, "for any given spot on the landscape, how many people depend on this spot for their drinking water?"
 
