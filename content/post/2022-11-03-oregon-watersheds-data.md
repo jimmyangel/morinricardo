@@ -121,7 +121,7 @@ We removed inactive and zero population watersheds. We also removed the watershe
 
 #### Snap geometries
 
-We ran a geometry snapping algorithm to make sure all overlapping and adjacent polygons lined up exactly against each other, thus eliminating undesirable visual artifacts when viewing the dataset. We used a tolerance of 200 feet.
+We ran a [geometry snapping algorithm](https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html#qgissnapgeometries) to make sure all overlapping and adjacent polygons lined up exactly against each other, thus eliminating undesirable visual artifacts when viewing the dataset. We used a tolerance of 200 feet.
 
 #### Compute total population per watershed
 
@@ -143,9 +143,9 @@ We implemented the algorithm using [QGIS' Python console](https://docs.qgis.org/
 
 #### Generate simplified dataset for the web application
 
-We generated a separate [GeoJSON](https://geojson.org/) dataset using the [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System) coordinate reference system (CRS) to be used in the [web application](https://watersheds.oregonhowl.org/) (the source CRS is EPSG:2992 - NAD83 / Oregon GIC Lambert (ft)).
+We [generated](https://github.com/jimmyangel/watersheds-data/blob/master/analysis/generate-web-layer.sh) a separate [GeoJSON](https://geojson.org/) dataset using the [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System) coordinate reference system (CRS) to be used in the [web application](https://watersheds.oregonhowl.org/) (the source CRS is EPSG:2992 - NAD83 / Oregon GIC Lambert (ft)).
 
-To reduce the size of the dataset, we ran a simplification algorithm and limited the precision of the  latitude and longitude coordinates to four decimals.
+To reduce the size of the dataset, we ran a [simplification algorithm](https://github.com/mbloch/mapshaper/blob/master/REFERENCE.md#-simplify) and limited the precision of the  latitude and longitude coordinates to four decimals.
 
 It should be noted that, for the web dataset, we decided to drop the Columbia watershed extensions to the cities of Clatskanie and Rainier, since the populations involved are relatively small, and the large polygons tended to clutter the web view by their sheer size.
 
