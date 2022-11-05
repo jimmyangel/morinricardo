@@ -133,7 +133,7 @@ Moreover, in our dataset, since every intersecting polygon is fully contained in
 
 Finally, rather than intersecting every polygon against every other one in the dataset (about 190 by 190), we can narrow down the number of intersection operations needed by first looking for *candidate* polygons, i.e., polygons that contain a common point inside their [bounding boxes](https://qgis.org/pyqgis/3.26/core/QgsSpatialIndex.html?highlight=qgsspatialindex#qgis.core.QgsSpatialIndex.intersects). This a much faster operation than polygon intersections, thanks to [QGIS' spatial index](https://docs.qgis.org/3.22/en/docs/pyqgis_developer_cookbook/vector.html?highlight=qgsspatialindex#using-spatial-index) feature. With this trick, we reduce the number of actual intersection operations from about 36,000 to just about 560!
 
-The algorithm is laid out below.
+The algorithm's pseudocode is laid out below.
 
 ```
 for each polygon P
