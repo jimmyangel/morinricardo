@@ -33,9 +33,9 @@ There are five non-overlapping sections of the Clackamas watershed. Moving upstr
 
 The [DEQ data source](https://www.oregon.gov/deq/wq/programs/pages/dwp-maps.aspx) does not include population information.
 
-To obtain population data, we consulted primarily the [OHA Drinking Water Online](https://yourwater.oregon.gov/index.html) database. One of the data items available is the population being served by a given water system. For example, for the [city of Estacada](https://yourwater.oregon.gov/inventory.php?pwsno=00279), the site shows a population of 3,725.
+To obtain population data, we consulted primarily Oregon Health Authority's (OHA) [Drinking Water Online](https://yourwater.oregon.gov/index.html) database. One of the data items available is the population being served by a given water system. For example, for the [city of Estacada](https://yourwater.oregon.gov/inventory.php?pwsno=00279), the site shows a population of 3,725.
 
-Another source of population data came from [PSU](https://www.pdx.edu/)'s [Population Estimate Reports](https://www.pdx.edu/population-research/population-estimate-reports), which is the official source of population estimates for the state of Oregon. For example, for the city of Lake Oswego, [PSU](https://www.pdx.edu/) reports a population of 39,480 for the year 2020.
+Another source of population data came from Portland State University's (PSU) [Population Estimate Reports](https://www.pdx.edu/population-research/population-estimate-reports), which is the official source of population estimates for the state of Oregon. For example, for the city of Lake Oswego, PSU reports a population of 39,480 for the year 2020.
 
 Finally, for population numbers difficult to come by, we resorted to individual water provider and city websites.
 
