@@ -16,7 +16,7 @@ We carried out this process under the direction of, and in partnership with Erik
 
 ### Drinking watershed data
 
-The primary data source for the watersheds project is the [Surface water drinking water source areas in Oregon](https://www.oregon.gov/deq/wq/programs/pages/dwp-maps.aspx) dataset, published by [DEQ](https://www.oregon.gov/deq/Pages/index.aspx). This dataset delineates all community public water systems using surface water directly, or groundwater under the influence of surface water.
+The primary data source for the watersheds project is the [Surface water drinking water source areas in Oregon](https://www.oregon.gov/deq/wq/programs/pages/dwp-maps.aspx) dataset, published by the [Oregon Department of Environmental Quality (DEQ)](https://www.oregon.gov/deq/Pages/index.aspx). This dataset delineates all community public water systems using surface water directly, or groundwater under the influence of surface water.
 
 Each water system watershed is mapped upstream from its intake. When there are multiple water intakes for a single watershed, each water system is mapped upstream from intake to intake, resulting in a series of non-overlapping areas representing sections of a hydrological unit.
 
