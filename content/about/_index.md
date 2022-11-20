@@ -18,3 +18,6 @@ I was born in Caracas, Venezuela, and immigrated to these great United States of
 
 I am married to [Hilde](http://www.hildemorin.com), my favorite artist. You should check her stuff out. It is really amazing.
 
+### Contact me
+
+[@jimmieangel](https://mstdn.social/@jimmyangel)
