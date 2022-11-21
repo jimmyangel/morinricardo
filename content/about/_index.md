@@ -20,4 +20,4 @@ I am married to [Hilde](http://www.hildemorin.com), my favorite artist. You shou
 
 ### Contact me
 
-[@jimmieangel](https://mstdn.social/@jimmyangel)
+[@jimmieangel](https://fosstodon.org/@jimmyangel)
