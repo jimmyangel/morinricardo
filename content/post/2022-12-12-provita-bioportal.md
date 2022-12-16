@@ -80,7 +80,7 @@ However, the project seems to have stalled, with the latest official release (v0
 
 Meanwhile, the [Vue.js](https://vuejs.org/) community has continued to evolve, with version 3 becoming more widely adopted. [Gridsome](https://gridsome.org/) is currently based on Vue 2, which means it is not able to take advantage of the latest improvements and features in the Vue ecosystem.
 
-As a result, I am considering moving to a different framework, [Nuxt.js](https://nuxt.com/), which recently released a stable Vue 3 version that supports full static site generation. I believe that [Nuxt.js](https://nuxt.com/) can provide me with the same capabilities as [Gridsome](https://gridsome.org/), as well as additional features and flexibility.
+As a result, I am considering moving to a different framework, [Nuxt.js](https://nuxt.com/), which recently [released a stable Vue 3 version](https://nuxt.com/v3) that supports [full static site generation](https://nuxt.com/docs/getting-started/deployment#static-hosting). I believe that [Nuxt.js](https://nuxt.com/) can provide me with the same capabilities as [Gridsome](https://gridsome.org/), as well as additional features and flexibility.
 
 <p align="center">
 	<img width="400" src="/images/uploads/aurevoir.gif"/><br>
