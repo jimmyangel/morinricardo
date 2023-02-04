@@ -6,7 +6,7 @@ tags:
   - gbif
   - gridsome
   - vue
-date: 2022-12-12T00:00:00.000Z
+date: 2023-02-04T00:00:00.000Z
 ---
 
 I am pleased to share the outcome of my recent collaboration with [Provita](https://www.provita.org.ve/): a [portal for biodiversity data in Venezuela](https://bioportal.provita.org.ve/en/).
@@ -27,11 +27,17 @@ The site offers two major categories of data: GBIF Data and Provita Data.
 
 ### GBIF Data
 
+#### Observations
+
 The portal provides simplified access to [observation records](https://bioportal.provita.org.ve/en/occurrences/) of species in the wild recorded in Venezuela that are kept on the [GBIF platform](https://www.gbif.org/). These records, known as [occurrences](https://www.gbif.org/occurrence/search?country=VE), include information about the species, location, time of observation, and other relevant details. They are collected by researchers, citizen scientists, and other individuals.
 
 <p align="center">
 	<img src="/images/uploads/provita-bioportal-2.jpg"/>
 </a>
+
+Records can be seen on a map, by clicking on the "Map" tab.
+
+#### Datasets
 
 In addition to observation records, the site also offers streamlined access to [datasets](https://bioportal.provita.org.ve/en/datasets) on the [GBIF platform](https://www.gbif.org/) that reference Venezuela in their content. These [datasets](https://www.gbif.org/dataset/search?q=Venezuela) are collections of biodiversity data that have been shared on the [GBIF platform](https://www.gbif.org/) and come in [four types](https://www.gbif.org/en/dataset-classes): resources metadata, checklist data, occurrence data, and sampling-event data.
 
@@ -43,11 +49,15 @@ Users can filter the data by relevant attributes and species taxonomy to find th
 
 ### Provita Data
 
+#### Terrestrial ecosystems
+
 The site offers information on [terrestrial ecosystems](https://bioportal.provita.org.ve/en/ecosystems/), sourced from the [Terrestrial Ecosystems Red Book](https://ecosistemasamenazados.org/) published by Provita in 2010. The main tab displays a list of ecosystems with their red book status (e.g., endangered), area metrics, and hyperlinks to the red book. In addition, on a separate tab, ecosystems are broken down by state with relative metrics (e.g., % State).
 
 <p align="center">
 	<img src="/images/uploads/provita-bioportal-4.jpg"/>
 </a>
+
+#### Threatened fauna species
 
 The portal also provides information on [threatened fauna species](https://bioportal.provita.org.ve/en/faunarb) identified in the [Red Book of Venezuelan Fauna](https://especiesamenazadas.org/), published by Provita in 2015. The main tab displays a list of threatened fauna species, their scientific & common names and their red book status, with the ability to filter by any of these attributes. On a separate tab, it displays a [sunburst visualization](https://www.cc.gatech.edu/gvu/ii/sunburst/) to facilitate the exploration of the species list.
 
@@ -70,7 +80,6 @@ We built the [Open Source Web application](https://github.com/Provitaonline/biod
 * [html2canvas](https://html2canvas.hertzen.com/) - A library that enables screen captures
 
 * [GBIF API](https://www.gbif.org/en/developer/summary) - A RESTful JSON based API that provides access to GBIF data
-
 
 ## A note about Gridsome
 
