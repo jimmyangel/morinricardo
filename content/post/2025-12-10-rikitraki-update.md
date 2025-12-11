@@ -1,4 +1,13 @@
-# Rikitraki Backend Update
+---
+title: 'Rikitraki Backend Update'
+tags:
+  - rikitraki
+  - mongodb
+  - dynamodb
+  - aws
+  - backend
+date: 2025-12-10T00:00:00.000Z
+---
 
 It has been a while since my last update, so I wanted to share some news about what has been happening behind the scenes. Rikitraki has been running quietly and reliably since 2016, and over the past few months I’ve been working on something that has been on my mind for a long time: a full refresh of the backend.
 
