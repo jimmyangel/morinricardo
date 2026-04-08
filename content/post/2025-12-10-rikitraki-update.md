@@ -11,6 +11,8 @@ date: 2025-12-10T00:00:00.000Z
 
 It has been a while since my last update, so I wanted to share some news about what has been happening behind the scenes. Rikitraki has been running quietly and reliably since 2016, and over the past few months I’ve been working on something that has been on my mind for a long time: a full refresh of the backend.
 
+<!--more-->
+
 The original system — a Node/Express app running on a dedicated VM with MongoDB — served amazingly well for almost a decade. But the versions of everything (Linux, MongoDB, Node, you name it) were getting old enough that upgrading in place was becoming more trouble than it was worth. So I finally took the plunge and rebuilt the whole backend.
 
 ## What Changed

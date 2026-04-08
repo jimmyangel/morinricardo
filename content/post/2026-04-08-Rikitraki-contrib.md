@@ -7,6 +7,8 @@ tags: ["rikitraki", "gpx", "gps"]
 
 In my [previous post](/post/2026-03-30-rikitraki2/), I walked through how to explore tracks on the new RikiTraki. This post flips the perspective. It is for track contributors. If you want to upload your own hikes, bike rides, runs, or adventures, this guide walks you through everything you need to know.
 
+<!--more-->
+
 ---
 
 ## Registering your account
