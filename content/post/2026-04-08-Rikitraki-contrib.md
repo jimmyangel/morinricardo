@@ -132,6 +132,30 @@ Edits are saved instantly, and the map updates as soon as the dialog closes.
 
 ---
 
+## Your personal RikiTraki space
+
+A feature I have wanted to build for a long time is now part of RikiTraki. Every contributor has a personal space that shows only their tracks and their own “What’s New…” panel. It is a small home base you can share with friends, family, or followers.
+
+```rikitraki.com/your-username```
+
+For example, here is my own space: [rikitraki.com/jimmyangel](https://rikitraki.com/jimmyangel)
+
+
+Your personal space shows only your tracks. The "What's New..." panel also filters to your own recent uploads. It is an easy way to share your adventures with friends, family, or followers without mixing them into the global map.
+
+### How others can find your space
+Anyone can visit your personal space by clicking your username. This works in two places:
+
+- In the track view, next to the track details  
+- In the list of tracks on the left panel
+
+Clicking a username always takes you to that user’s personal space.
+
+### Switching between global and personal views
+When you are logged in, you can switch between the global map and your own personal space from the User Info dialog. This makes it easy to explore everyone’s tracks or focus on your own.
+
+---
+
 ## Wrapping up
 
 This is the full contributor workflow in RikiTraki 2.0. From registration to uploading, geotagging, and editing. The goal is to make sharing your adventures as simple and enjoyable as possible.
