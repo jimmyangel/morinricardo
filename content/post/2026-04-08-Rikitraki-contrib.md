@@ -80,7 +80,7 @@ Give your track a name, description, favorite tag, difficulty level, and activit
 The region field is assigned automatically based on the track’s starting point. If the trailhead region is ambiguous because it is too close to a boundary, you can pick the most appropriate region.
 
 ### A quick note about track names and descriptions
-Please give your track a clear and meaningful name. Something like "Forest Park Loop" or "Mt Hood South Side" helps others understand what they are looking at. Avoid placeholder names like "test" or random text. RikiTraki is a shared public map, and thoughtful titles and descriptions make it more useful for everyone.
+Please give your track a clear and meaningful name (a minimum of 20 characters). Something like "Forest Park Loop, Portland" or "Mount Hood South Side" helps others understand what they are looking at. Avoid placeholder names like "test" or random text. RikiTraki is a shared public map, and thoughtful titles and descriptions make it more useful for everyone.
 
 ---
 
