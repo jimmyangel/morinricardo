@@ -29,6 +29,10 @@ Switch to the Register tab and fill out the form. RikiTraki asks for your email 
     <img src="/images/uploads/rikitraki2-contrib-2.jpg"/>
 </div>
 
+It is a good idea to choose a username that is friendly for URLs, for example one without spaces. Short names like `juan-c-jover` or `mountainrunner` work well.
+
+Your username becomes part of your personal RikiTraki space, which you can read more about in the [section below](#your-personal-rikitraki-space).
+
 ### A note about content ownership
 When you register, you agree to upload only GPX files and photos that you personally own. You also agree to release all uploaded content into the [public domain](https://creativecommons.org/publicdomain/zero/1.0/). This keeps RikiTraki simple, open, and shareable. Every track and photo becomes part of a public resource that anyone can explore.
 
