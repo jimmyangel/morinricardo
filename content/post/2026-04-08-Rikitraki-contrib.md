@@ -91,7 +91,7 @@ Switch to the Photos tab to upload images.
 Photos are encouraged. Tracks with photos appear in the "What's new..." panel on the homepage, which helps others discover your content more easily.
 
 ### Upload up to 8 JPEGs
-Drag photos in or use the upload button. RikiTraki generates thumbnails and lets you reorder photos by dragging. You can also delete unwanted photos.
+Use the upload button to add photos. RikiTraki generates thumbnails and lets you reorder photos by dragging. You can also delete unwanted photos.
 
 <div align="center">
     <img src="/images/uploads/rikitraki2-contrib-6.jpg"/>
